@@ -1,0 +1,5 @@
+# Machine-local Obsidian state; do not publish it in this public vault mirror.
+.obsidian/
+.trash/
+.DS_Store
+Thumbs.db
