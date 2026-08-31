@@ -310,3 +310,8 @@ Files created:
 - Added `raw/articles/astro-triagebot-openai-provider-2026-08-30.md` with immutable primary-commit and independent-validation record plus checksum.
 - Added `entities/tools/astro-triagebot-action.md`, documenting the staged reproduce/diagnose/verify/fix pattern, GitHub-visible state, reporter validation, maintainer acceptance and the new OpenAI provider path.
 - Updated `index.md` date and page count.
+
+## [2026-08-31] ingest | Tencent Hy4 preview
+- Added `raw/articles/tencent-hy4-preview-model-card-2026-08-31.md` with a bounded primary model-card excerpt and immutable-body checksum.
+- Added `entities/models/tencent-hy4.md`, preserving the Apache-2.0/open-weight availability facts, vendor-evidence boundary, documented serving paths, and fixed-harness trial protocol.
+- Updated `index.md` date and page count.
