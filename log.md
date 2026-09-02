@@ -315,3 +315,8 @@ Files created:
 - Added `raw/articles/tencent-hy4-preview-model-card-2026-08-31.md` with a bounded primary model-card excerpt and immutable-body checksum.
 - Added `entities/models/tencent-hy4.md`, preserving the Apache-2.0/open-weight availability facts, vendor-evidence boundary, documented serving paths, and fixed-harness trial protocol.
 - Updated `index.md` date and page count.
+
+## [2026-09-02] ingest | Claude Fable 5.1 / Mythos 5.1
+- Added `raw/articles/anthropic-claude-fable-51-2026-09-01.md`, preserving a bounded primary-source capture and immutable-body checksum.
+- Added `entities/models/claude-fable-5-1.md` with the API-migration, retention, vendor-evidence and controlled-trial boundaries for the 01/09 release.
+- Updated `entities/models/claude-opus-5.md` with a reciprocal fixed-harness comparison link, and updated `index.md` date/page count.

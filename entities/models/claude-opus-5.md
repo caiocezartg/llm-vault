@@ -1,10 +1,10 @@
 ---
 title: Claude Opus 5
 created: 2026-07-25
-updated: 2026-08-08
+updated: 2026-09-02
 type: entity
 tags: [llm, model, reasoning, tool-calling, context-window, coding, evaluation]
-sources: [raw/articles/anthropic-claude-opus-5-2026-07-24.md, raw/articles/anthropic-claude-code-v21224-2026-08-08.md]
+sources: [raw/articles/anthropic-claude-opus-5-2026-07-24.md, raw/articles/anthropic-claude-code-v21224-2026-08-08.md, raw/articles/anthropic-claude-fable-51-2026-09-01.md]
 confidence: medium
 contested: false
 contradictions: []
@@ -26,7 +26,7 @@ Claude Opus 5 is Anthropic's flagship general-access model, released on 24 July 
 
 ## Controlled-trial guidance
 
-Evaluate it on a fixed set of representative tasks against [[entities/models/gpt-5-6]] and [[entities/models/gemini-3-6-flash]]. Keep model identity, effort level, tool policy, budgets, worktree isolation, tests and reviewer separate from the variable under test. Record verified task success, cost per successful task, latency, tool calls, retry/fallback events, out-of-scope diffs and review findings. Use the task-boundary routing pattern in [[comparisons/model-routing-hermes-opencode-pi]].
+Evaluate it on a fixed set of representative tasks against [[entities/models/gpt-5-6]], [[entities/models/gemini-3-6-flash]] and the newer [[entities/models/claude-fable-5-1]]. Keep model identity, effort level, tool policy, budgets, worktree isolation, tests and reviewer separate from the variable under test. Record verified task success, cost per successful task, latency, tool calls, retry/fallback events, out-of-scope diffs and review findings. Use the task-boundary routing pattern in [[comparisons/model-routing-hermes-opencode-pi]].
 
 ## Caveats
 
