@@ -320,3 +320,8 @@ Files created:
 - Added `raw/articles/anthropic-claude-fable-51-2026-09-01.md`, preserving a bounded primary-source capture and immutable-body checksum.
 - Added `entities/models/claude-fable-5-1.md` with the API-migration, retention, vendor-evidence and controlled-trial boundaries for the 01/09 release.
 - Updated `entities/models/claude-opus-5.md` with a reciprocal fixed-harness comparison link, and updated `index.md` date/page count.
+
+## [2026-09-03] update | GitSpawn exposure in Hermes Agent
+- Added `raw/articles/manifold-gitspawn-2026-09-01.md` with an immutable bounded primary-source record and SHA-256 body checksum.
+- Updated `entities/tools/hermes-agent.md` with the CVE-2026-71963 status, the affected 0.21.0 verification boundary, and the reusable untrusted-repository containment rule.
+- Updated `index.md` date; no new entity page was created.
