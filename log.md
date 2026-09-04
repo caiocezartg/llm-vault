@@ -325,3 +325,8 @@ Files created:
 - Added `raw/articles/manifold-gitspawn-2026-09-01.md` with an immutable bounded primary-source record and SHA-256 body checksum.
 - Updated `entities/tools/hermes-agent.md` with the CVE-2026-71963 status, the affected 0.21.0 verification boundary, and the reusable untrusted-repository containment rule.
 - Updated `index.md` date; no new entity page was created.
+
+## [2026-09-04] update | Gemini 3.8 Flash availability and evaluation boundary
+- Added `raw/articles/google-gemini-3-8-flash-2026-09-02.md` with a bounded primary-source record and immutable body checksum.
+- Updated `entities/models/gemini-3-6-flash.md` with 3.8 API/migration facts, staged GitHub Copilot rollout, token-versus-task-cost caveat, and controlled-trial guidance.
+- Updated `index.md` date and Gemini summary; no new entity page was created.

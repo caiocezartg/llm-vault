@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-09-03 | Total pages: 33
+> Last updated: 2026-09-04 | Total pages: 33
 
 ## Concepts
 
@@ -16,7 +16,7 @@
 - [[entities/models/bonsai-27b]] — Low-bit Qwen3.6-27B derivatives for bounded local inference; benchmark and long-horizon coding caveats included.
 - [[entities/models/claude-fable-5-1]] — Anthropic's Fable 5.1: API migration, retention, cost-evidence and controlled-trial boundaries for long-running coding/research tasks.
 - [[entities/models/claude-opus-5]] — Anthropic flagship model for high-capability coding/review trials; model/fallback behavior and controlled-evaluation guidance.
-- [[entities/models/gemini-3-6-flash]] — Gemini Flash 3.6/3.7 for agentic/coding trials; price, independent-speed snapshot, vendor-evidence boundary, and controlled-evaluation guidance.
+- [[entities/models/gemini-3-6-flash]] — Gemini Flash 3.6/3.7/3.8 for agentic/coding trials; migration, availability, cost-per-task and controlled-evaluation boundaries.
 - [[entities/models/glm-5-3]] — Z.ai’s GLM-5.3 family: post-trained coding/agent model plus the open-weight GLM-5.3-Flash variant; vendor-benchmark caveats and controlled-trial boundary.
 - [[entities/models/gpt-5-6]] — GPT-5.6 family: current availability, evaluation evidence, reliability caveats, and controlled adoption guidance.
 - [[entities/models/kimi-k3]] — Kimi K3: API-available 2.8T model; integration requirements, first-party benchmark caveats, and controlled-trial guidance.
