@@ -1,7 +1,7 @@
 ---
 title: GPT-5.6
 created: 2026-07-12
-updated: 2026-08-27
+updated: 2026-09-05
 type: entity
 tags: [llm, model, evaluation, coding, tool-calling, agent, inference]
 sources:
@@ -80,6 +80,10 @@ For the USD 20/month ChatGPT Plus plan, Codex currently includes Sol, Terra, and
 - **Ultra is a mode, not a fourth model.** It coordinates parallel subagents and is appropriate only when a hard task decomposes into meaningful independent workstreams; routine use burns allowance without guaranteed benefit.
 
 Published Plus estimates per shared five-hour window are 15–90 local messages for Sol, 20–110 for Terra, and 50–280 for Luna, with possible additional weekly limits. These are ranges, not entitlements. GPT-5.4 mini remains a current high-volume fallback (60–350 estimated local messages), while GPT-5.5 and GPT-5.4 are mainly compatibility/regression choices now; GPT-5.3-Codex-Spark is Pro-only. [Codex model guide](https://developers.openai.com/codex/models) · [Codex pricing and limits](https://developers.openai.com/codex/pricing)
+
+## Successor update (2026-09-03)
+
+OpenAI released [[entities/models/gpt-6-astra]] as the new frontier candidate. Artificial Analysis measured a Coding Agent Index result of 67.0 in the Codex harness versus 65.1 for Sol, but also a 61 tie in its broader Intelligence Index and a higher max-effort cost per task due to Astra's 2.5× list price. This is a routing-trial signal rather than evidence to retire Sol: compare them under the same retained task set, constraints and independent acceptance gates. ^[raw/articles/gpt-6-astra-2026-09-05.md]
 
 ## Related
 

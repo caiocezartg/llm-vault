@@ -330,3 +330,8 @@ Files created:
 - Added `raw/articles/google-gemini-3-8-flash-2026-09-02.md` with a bounded primary-source record and immutable body checksum.
 - Updated `entities/models/gemini-3-6-flash.md` with 3.8 API/migration facts, staged GitHub Copilot rollout, token-versus-task-cost caveat, and controlled-trial guidance.
 - Updated `index.md` date and Gemini summary; no new entity page was created.
+
+## [2026-09-05] ingest | GPT-6 Astra
+- Added `raw/articles/gpt-6-astra-2026-09-05.md` with a bounded primary-source capture and SHA-256 body checksum.
+- Added `entities/models/gpt-6-astra.md` with release/access facts, the independent Artificial Analysis evaluation boundary, and fixed-harness routing-trial guidance.
+- Updated `entities/models/gpt-5-6.md` with the successor boundary and `index.md` date/page count.
