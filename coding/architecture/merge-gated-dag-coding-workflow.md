@@ -1,7 +1,7 @@
 ---
 title: Merge-Gated DAG Coding Workflow
 created: 2026-07-25
-updated: 2026-07-31
+updated: 2026-09-08
 type: architecture
 tags: [agent, agent-orchestration, multi-agent, workflow, coding, architecture, testing, devops]
 sources:
@@ -10,6 +10,7 @@ sources:
   - https://git-scm.com/docs/git-clone
   - https://fletch.sh/blog/git-worktrees-vs-clones-for-ai-agents/
   - https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
+  - raw/articles/openai-research-acceleration-2026-09-06.md
 confidence: high
 contested: false
 contradictions: []
@@ -122,6 +123,12 @@ A wave is a snapshot for observability, not a barrier. A downstream task may lau
 - A full-wave barrier wastes parallelism. Release nodes when their own dependencies merge.
 - Do not conflate a green PR branch with production truth: revalidate on current main and observe post-merge/deploy health.
 - A linked Git worktree has a separate working directory, `HEAD`, and index, but shares the common `.git` state (including config, refs, stash, and hooks). It is therefore not a process, credential, or host-execution isolation boundary. For unattended/untrusted agents, enforce sandboxing outside the harness and prefer independent local clones; `git clone --shared` can reduce object-store duplication, but its source-repository dependency must be managed deliberately (for example, no premature source GC/deletion).
+
+## Evidence boundary from OpenAI's internal deployment (2026)
+
+OpenAI's 06/09/2026 internal snapshot reports 3.1 coding-agent workdays of runtime for each human workday in its research organization, including direct agents and downstream subagents. This is a scale signal for concurrent execution—not a portable productivity multiplier: OpenAI also reports expanded compute capacity and does not isolate the causal contribution of agents. ^[raw/articles/openai-research-acceleration-2026-09-06.md]
+
+More importantly for a control plane, its outcome analysis says that more than half of successful tasks estimated at four to eight human-hours required at least one human intervention. Treat intervention as a first-class state transition with an explicit owner, evidence and re-entry condition; do not hide it in a chat thread or let aggregate agent runtime stand in for accepted output. The relevant measures are accepted tasks, gate/review escape rate, rework, time-to-accepted-change and human intervention cost. ^[raw/articles/openai-research-acceleration-2026-09-06.md]
 
 ## Minimal practical rollout
 

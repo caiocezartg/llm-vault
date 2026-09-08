@@ -335,3 +335,8 @@ Files created:
 - Added `raw/articles/gpt-6-astra-2026-09-05.md` with a bounded primary-source capture and SHA-256 body checksum.
 - Added `entities/models/gpt-6-astra.md` with release/access facts, the independent Artificial Analysis evaluation boundary, and fixed-harness routing-trial guidance.
 - Updated `entities/models/gpt-5-6.md` with the successor boundary and `index.md` date/page count.
+
+## [2026-09-08] ingest | OpenAI research-acceleration evidence for concurrent agent workflows
+- Added `raw/articles/openai-research-acceleration-2026-09-06.md`, a bounded immutable capture of OpenAI's 06/09 internal measurement report with a body checksum.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the evidence boundary: agent-runtime scale is not an output metric, and human intervention must be modeled as an explicit state transition with independent gates/reviews.
+- Updated `index.md` date; no page was added or renamed.
