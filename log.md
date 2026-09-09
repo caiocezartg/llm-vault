@@ -340,3 +340,8 @@ Files created:
 - Added `raw/articles/openai-research-acceleration-2026-09-06.md`, a bounded immutable capture of OpenAI's 06/09 internal measurement report with a body checksum.
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the evidence boundary: agent-runtime scale is not an output metric, and human intervention must be modeled as an explicit state transition with independent gates/reviews.
 - Updated `index.md` date; no page was added or renamed.
+
+## [2026-09-09] update | GitHub Copilot HydraFusion compound routing boundary
+- Added `raw/articles/github-hydrafusion-2026-09-04.md` as a bounded immutable primary-source record with a body checksum.
+- Updated `comparisons/model-routing-hermes-opencode-pi.md` with GitHub Copilot's hosted compound-routing preview, its hidden/provider-managed model roster and intermediate output boundaries, the mixed benchmark result, and retained control-plane requirements.
+- Updated `index.md` date; no page was added or renamed.

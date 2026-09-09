@@ -1,7 +1,7 @@
 ---
 title: Model Routing Across Hermes, OpenCode, and Pi
 created: 2026-07-17
-updated: 2026-08-20
+updated: 2026-09-09
 type: comparison
 tags: [comparison, agent, agent-orchestration, workflow, hermes, tool, openrouter]
 sources:
@@ -30,6 +30,7 @@ sources:
   - https://github.com/openai/codex/releases/tag/rust-v0.147.0
   - raw/articles/agent-plugins-spec-100-2026-08-13.md
   - raw/articles/openrouter-stripe-2026-08-20.md
+  - raw/articles/github-hydrafusion-2026-09-04.md
   - https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app
 confidence: high
 contested: false
@@ -81,6 +82,12 @@ Prefer **routing at typed task boundaries** over swapping the parent model every
 5. Measure actual total cost, latency, pass rate, retries, cache misses, and duplicated context; do not infer savings from per-token prices alone.
 
 This complements [[coding/architecture/kitdev-deterministic-agentic-workflows]]: the router chooses a worker lane, while executable gates—not the router or model—decide completion. Hermes details live in [[entities/tools/hermes-agent]].
+
+### GitHub Copilot HydraFusion: vendor-managed compound routing
+
+GitHub's 4 September 2026 **HydraFusion** preview is a concrete hosted implementation of per-turn compound routing: it can select a single model, a cheap-first cascade with a quality gate, or a cross-family read-only critique followed by one revision. The useful implementation boundaries are complete accounting of every leg, explicit timeout/cancellation, tool-less review isolation, no patch on failed validation, and preflight validation of model bindings. ^[raw/articles/github-hydrafusion-2026-09-04.md]
+
+It is a trial reference, not a portable control plane: the curated model roster is not selectable or fixed, intermediate drafts are withheld, pricing aggregates underlying-model token use, and the preview is currently scoped to first-turn single-prompt tasks. GitHub's own results trade quality for cost on two of three reported benchmarks, so do not generalize its 67% TerminalBench saving to repository work. Preserve requested/effective model receipts, role-level cost/latency, explicit human intervention, isolated review, and repository-native acceptance gates. Compare against [[coding/architecture/merge-gated-dag-coding-workflow]] and [[entities/tools/hermes-agent]].
 
 ## Hermes delegating implementation to OpenCode
 
