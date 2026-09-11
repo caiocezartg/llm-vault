@@ -345,3 +345,10 @@ Files created:
 - Added `raw/articles/github-hydrafusion-2026-09-04.md` as a bounded immutable primary-source record with a body checksum.
 - Updated `comparisons/model-routing-hermes-opencode-pi.md` with GitHub Copilot's hosted compound-routing preview, its hidden/provider-managed model roster and intermediate output boundaries, the mixed benchmark result, and retained control-plane requirements.
 - Updated `index.md` date; no page was added or renamed.
+
+## [2026-09-11] ingest | DeepSeek V4.1 Flash, OpenAI Agents API, and GitHub Actions cache-mode
+- Added immutable bounded raw records with SHA-256 body checksums: `raw/articles/deepseek-v4-1-flash-2026-09-10.md`, `raw/articles/openai-agents-api-2026-09-10.md`, and `raw/articles/github-actions-cache-mode-2026-09-10.md`.
+- Added `entities/models/deepseek-v4-1-flash.md`: architecture/API-reroute facts, vendor-evidence boundary, and a fixed-harness coding-agent trial protocol.
+- Added `entities/tools/openai-agents-api.md`: public-beta managed-harness surface and the retained environment/authorization/external-gate boundary.
+- Added `concepts/github-actions-cache-capability-modes.md`: explicit CI cache authority, cache-poisoning mitigation boundary, and clean-build/performance verification requirement.
+- Updated `index.md` date and page count.

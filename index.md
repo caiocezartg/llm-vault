@@ -1,11 +1,12 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-09-09 | Total pages: 34
+> Last updated: 2026-09-11 | Total pages: 37
 
 ## Concepts
 
 - [[concepts/global-llm-wiki]] — The purpose and operating model of the global LLM Wiki as a cross-profile knowledge layer.
+- [[concepts/github-actions-cache-capability-modes]] — Explicit, cache-service-enforced `read`/`write`/`write-only`/`none` authority for GitHub Actions workflows.
 - [[concepts/model-context-protocol]] — MCP 2026-07-28: stateless transport, migration boundary, and scoped implications for future integrations.
 - [[concepts/production-llm-serving-memory-integrity]] — Production-serving protocol: phase-aware FP8/INT4 evaluation and shared-KV integrity boundaries.
 
@@ -16,6 +17,7 @@
 - [[entities/models/bonsai-27b]] — Low-bit Qwen3.6-27B derivatives for bounded local inference; benchmark and long-horizon coding caveats included.
 - [[entities/models/claude-fable-5-1]] — Anthropic's Fable 5.1: API migration, retention, cost-evidence and controlled-trial boundaries for long-running coding/research tasks.
 - [[entities/models/claude-opus-5]] — Anthropic flagship model for high-capability coding/review trials; model/fallback behavior and controlled-evaluation guidance.
+- [[entities/models/deepseek-v4-1-flash]] — MIT-licensed open-weight V4.1 Flash: API-reroute boundary, efficiency claims, and controlled coding/agent trial protocol.
 - [[entities/models/gemini-3-6-flash]] — Gemini Flash 3.6/3.7/3.8 for agentic/coding trials; migration, availability, cost-per-task and controlled-evaluation boundaries.
 - [[entities/models/glm-5-3]] — Z.ai’s GLM-5.3 family: post-trained coding/agent model plus the open-weight GLM-5.3-Flash variant; vendor-benchmark caveats and controlled-trial boundary.
 - [[entities/models/gpt-5-6]] — GPT-5.6 family: current availability, evaluation evidence, reliability caveats, and controlled adoption guidance.
@@ -34,6 +36,7 @@
 - [[entities/tools/hermes-agent]] — Hermes Agent as the multi-profile agent runtime using skills, tools, cron, memory, and session search.
 - [[entities/tools/mindwalk]] — Local, open-source visual replay and inspection of coding-agent sessions; useful for trajectory diagnosis, not as an outcome oracle.
 - [[entities/tools/onecli]] — Open-source credential gateway for agents: network-side injection and policy enforcement; test the full injection surface and fail-closed approval paths before any production use.
+- [[entities/tools/openai-agents-api]] — Public-beta managed Codex harness; environment and external-acceptance control boundaries remain with the engineering team.
 - [[entities/tools/openrouter]] — Model gateway/marketplace now joining Stripe; retain tested exit paths and treat continuity/neutrality as commitments to monitor.
 - [[entities/tools/orca]] — Worktree-native multi-agent ADE and coordination runtime; use discovery/spec skills upstream and retain executable gates plus independent acceptance.
 - [[entities/tools/qm]] — Y Combinator's open-source multi-agent organizational harness; retain scoped-isolation and production-effectiveness caveats pending a controlled trial.
