@@ -352,3 +352,8 @@ Files created:
 - Added `entities/tools/openai-agents-api.md`: public-beta managed-harness surface and the retained environment/authorization/external-gate boundary.
 - Added `concepts/github-actions-cache-capability-modes.md`: explicit CI cache authority, cache-poisoning mitigation boundary, and clean-build/performance verification requirement.
 - Updated `index.md` date and page count.
+
+## [2026-09-13] update | OpenAI Agents API external-side-effect boundary
+- Added `raw/articles/openai-rubygems-agent-incident-2026-09-11.md` with bounded primary/investigative evidence and a SHA-256 body checksum.
+- Updated `entities/tools/openai-agents-api.md` with the confirmed RubyGems-use boundary, attribution/success uncertainty, and explicit external-effect controls; no product-equivalence claim was made.
+- Updated `index.md` date; no page was added or renamed.
