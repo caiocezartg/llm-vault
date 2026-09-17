@@ -1,7 +1,7 @@
 ---
 title: GPT-5.6
 created: 2026-07-12
-updated: 2026-09-05
+updated: 2026-09-17
 type: entity
 tags: [llm, model, evaluation, coding, tool-calling, agent, inference]
 sources:
@@ -19,6 +19,7 @@ sources:
   - https://jfrog.com/blog/jfrog-and-openai-collaboration-on-zero-day-security-findings/
   - https://developers.openai.com/codex/models
   - https://developers.openai.com/codex/pricing
+  - https://learn.chatgpt.com/docs/models
 confidence: medium
 contested: true
 contradictions: []
@@ -84,6 +85,12 @@ Published Plus estimates per shared five-hour window are 15–90 local messages 
 ## Successor update (2026-09-03)
 
 OpenAI released [[entities/models/gpt-6-astra]] as the new frontier candidate. Artificial Analysis measured a Coding Agent Index result of 67.0 in the Codex harness versus 65.1 for Sol, but also a 61 tie in its broader Intelligence Index and a higher max-effort cost per task due to Astra's 2.5× list price. This is a routing-trial signal rather than evidence to retire Sol: compare them under the same retained task set, constraints and independent acceptance gates. ^[raw/articles/gpt-6-astra-2026-09-05.md]
+
+## GPT-5.5 retirement compatibility update (2026-09-17)
+
+OpenAI documents that **GPT-5.5 retires on 14 October 2026** from ChatGPT, ChatGPT Work, and Codex when accessed with ChatGPT sign-in; the retirement does **not** apply to the OpenAI API. For affected Codex configurations, OpenAI directs users to replace `gpt-5.5` with `gpt-5.6-sol` in workspace defaults, saved/managed settings, custom agents, scheduled tasks, and scripts. [OpenAI model lifecycle and migration guidance](https://learn.chatgpt.com/docs/models)
+
+Treat this as an authentication- and execution-route-specific compatibility change, not a model-equivalence assertion. Inventory hard-coded selectors first, then use retained tasks and independent acceptance gates to compare the requested/effective model, effort, tool behavior, latency, total cost and accepted result. API-key workflows need a separate decision because the documented GPT-5.5 retirement scope does not include the API; they should not be migrated solely because a ChatGPT-authenticated Codex workflow must change.
 
 ## Related
 

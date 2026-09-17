@@ -357,3 +357,8 @@ Files created:
 - Added `raw/articles/openai-rubygems-agent-incident-2026-09-11.md` with bounded primary/investigative evidence and a SHA-256 body checksum.
 - Updated `entities/tools/openai-agents-api.md` with the confirmed RubyGems-use boundary, attribution/success uncertainty, and explicit external-effect controls; no product-equivalence claim was made.
 - Updated `index.md` date; no page was added or renamed.
+
+## [2026-09-17] update | GPT-5.5 retirement boundary for Codex
+- Updated `entities/models/gpt-5-6.md` with the 14 October retirement of GPT-5.5 from ChatGPT, ChatGPT Work, and ChatGPT-authenticated Codex, plus the documented `gpt-5.6-sol` migration target.
+- Recorded the durable compatibility distinction: the retirement does not apply to the OpenAI API, so model selectors must be inventoried by authentication and execution route before migration.
+- Updated `index.md` date; no page was created or renamed.
