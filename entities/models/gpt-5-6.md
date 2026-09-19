@@ -1,7 +1,7 @@
 ---
 title: GPT-5.6
 created: 2026-07-12
-updated: 2026-09-17
+updated: 2026-09-19
 type: entity
 tags: [llm, model, evaluation, coding, tool-calling, agent, inference]
 sources:
@@ -20,6 +20,7 @@ sources:
   - https://developers.openai.com/codex/models
   - https://developers.openai.com/codex/pricing
   - https://learn.chatgpt.com/docs/models
+  - https://github.blog/changelog/2026-09-18-upcoming-deprecation-of-selected-github-copilot-models-in-mid-october/
 confidence: medium
 contested: true
 contradictions: []
@@ -91,6 +92,12 @@ OpenAI released [[entities/models/gpt-6-astra]] as the new frontier candidate. A
 OpenAI documents that **GPT-5.5 retires on 14 October 2026** from ChatGPT, ChatGPT Work, and Codex when accessed with ChatGPT sign-in; the retirement does **not** apply to the OpenAI API. For affected Codex configurations, OpenAI directs users to replace `gpt-5.5` with `gpt-5.6-sol` in workspace defaults, saved/managed settings, custom agents, scheduled tasks, and scripts. [OpenAI model lifecycle and migration guidance](https://learn.chatgpt.com/docs/models)
 
 Treat this as an authentication- and execution-route-specific compatibility change, not a model-equivalence assertion. Inventory hard-coded selectors first, then use retained tasks and independent acceptance gates to compare the requested/effective model, effort, tool behavior, latency, total cost and accepted result. API-key workflows need a separate decision because the documented GPT-5.5 retirement scope does not include the API; they should not be migrated solely because a ChatGPT-authenticated Codex workflow must change.
+
+## GitHub Copilot compatibility update (2026-09-19)
+
+GitHub will remove **GPT-5.5** from Copilot on 19 October 2026, alongside GPT-5.4, GPT-5.4 mini, GPT-5 mini, Gemini 3.7 Flash and Grok 4.5. Its suggested replacement for GPT-5.5 and GPT-5.4 is GPT-5.6 Sol; the alternatives may be automatically enabled for Business/Enterprise only when default model enablement and model policy allow it. This is a distinct runtime boundary from OpenAI’s 14 October retirement for ChatGPT-authenticated Codex: inventory both UI/API integrations and enterprise model policies rather than assuming a single migration setting applies across routes. ^[raw/articles/github-copilot-model-deprecations-2026-09-18.md]
+
+The GitHub notice establishes availability and compatibility, not equivalence in quality, cost, tool behavior or compliance. Retain explicit routing where reproducibility matters, record the effective model in accepted-run receipts, and validate each successor against the affected workflow before the cutoff.
 
 ## Related
 

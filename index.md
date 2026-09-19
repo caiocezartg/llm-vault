@@ -1,12 +1,13 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-09-17 | Total pages: 37
+> Last updated: 2026-09-19 | Total pages: 38
 
 ## Concepts
 
 - [[concepts/global-llm-wiki]] — The purpose and operating model of the global LLM Wiki as a cross-profile knowledge layer.
 - [[concepts/github-actions-cache-capability-modes]] — Explicit, cache-service-enforced `read`/`write`/`write-only`/`none` authority for GitHub Actions workflows.
+- [[concepts/npm-stage-only-tokens]] — npm’s stage-only CI token and human/2FA promotion boundary; rollout and residual-authority caveats included.
 - [[concepts/model-context-protocol]] — MCP 2026-07-28: stateless transport, migration boundary, and scoped implications for future integrations.
 - [[concepts/production-llm-serving-memory-integrity]] — Production-serving protocol: phase-aware FP8/INT4 evaluation and shared-KV integrity boundaries.
 

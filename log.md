@@ -362,3 +362,9 @@ Files created:
 - Updated `entities/models/gpt-5-6.md` with the 14 October retirement of GPT-5.5 from ChatGPT, ChatGPT Work, and ChatGPT-authenticated Codex, plus the documented `gpt-5.6-sol` migration target.
 - Recorded the durable compatibility distinction: the retirement does not apply to the OpenAI API, so model selectors must be inventoried by authentication and execution route before migration.
 - Updated `index.md` date; no page was created or renamed.
+
+## [2026-09-19] ingest | npm stage-only tokens and GitHub Copilot model retirement
+- Added immutable bounded raw records with SHA-256 body checksums: `raw/articles/npm-stage-only-tokens-2026-09-18.md` and `raw/articles/github-copilot-model-deprecations-2026-09-18.md`.
+- Added `concepts/npm-stage-only-tokens.md`: explicit CI staging authority, human/2FA promotion, January 2027 migration boundary, and residual token-authority caveat.
+- Updated `entities/models/gpt-5-6.md` with the separate GitHub Copilot removal of GPT-5.5 on 19 October, its suggested Sol successor, and the distinct policy/availability boundary.
+- Updated `index.md` date and page count.
