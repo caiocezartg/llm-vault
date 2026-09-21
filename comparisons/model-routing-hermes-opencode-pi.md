@@ -1,7 +1,7 @@
 ---
 title: Model Routing Across Hermes, OpenCode, and Pi
 created: 2026-07-17
-updated: 2026-09-09
+updated: 2026-09-21
 type: comparison
 tags: [comparison, agent, agent-orchestration, workflow, hermes, tool, openrouter]
 sources:
@@ -31,6 +31,7 @@ sources:
   - raw/articles/agent-plugins-spec-100-2026-08-13.md
   - raw/articles/openrouter-stripe-2026-08-20.md
   - raw/articles/github-hydrafusion-2026-09-04.md
+  - raw/articles/air-plugin4shell-2026-09-17.md
   - https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app
 confidence: high
 contested: false
@@ -138,6 +139,12 @@ The release also removes `codex exec --full-auto` in favor of explicit sandbox c
 Agent Plugins Specification `1.0.0` is now available in VS Code, Copilot CLI, the Copilot app and Copilot SDK, while Codex had already added plugin catalog support in `v0.147.0`. Its portable core is deliberately narrow: a `plugin.json` plus optional Agent Skills in `skills/` and MCP server configuration in `mcp.json`; hooks, agents, commands, UI and other client-specific features remain in reverse-domain extensions or compatibility packages. ^[raw/articles/agent-plugins-spec-100-2026-08-13.md]
 
 For a cross-harness workflow this is a useful **distribution** format, not a portable authority or execution model. The specification requires package-relative paths to remain inside the resolved plugin root, but explicitly does not sandbox a plugin subprocess or constrain runtime-supplied paths. Therefore validate/pin/vet a plugin's source and its MCP server configuration, apply host/network/credential policy outside the package, and test each target client independently. The external format is additive: OpenCode has an assigned feature request rather than shipped first-class support as of 2026-08-13. [[concepts/model-context-protocol]] still governs tool protocol semantics; [[entities/tools/hermes-agent]] and repository gates retain control-plane authority.
+
+### Plugin4Shell: a pin is not execution integrity
+
+AIR Security's 17 September 2026 Plugin4Shell disclosure shows why a pinned plugin revision must be verified **after** Git resolves and checks it out. The reported Claude Code/Codex/Copilot path passes a SHA-like string to `git checkout` but does not assert that working-tree `HEAD` equals the reviewed commit; a repository controlled by an attacker can make an ambiguous ref resolve to different code. AIR reports an analogous `FETCH_HEAD` collision in Gemini CLI. The report says Claude Code `2.1.179` and Codex `0.146.0` fixed their paths, while GitHub Copilot was unpatched and Gemini CLI deprecated without a patch when checked; recheck vendor status before making an operational decision. ^[raw/articles/air-plugin4shell-2026-09-17.md]
+
+The durable acceptance rule is therefore: a plugin/skill client must resolve the installed working-tree commit and abort unless it matches the expected immutable object ID. Treat marketplace approval, a source pin, or an auto-update policy as incomplete until this client-side assertion is independently tested. The check is necessary but insufficient: retain provenance review, explicit capability boundaries, isolated execution, scoped credentials/egress, and SHA-bound repository gates. This strengthens the distribution boundary here and in [[concepts/model-context-protocol]]; it also aligns with the untrusted-workspace and external-control principles in [[entities/tools/hermes-agent]] and [[coding/architecture/merge-gated-dag-coding-workflow]].
 
 OpenCode must execute where the worktree exists. In the intended VPS-brain/local-Windows-sandbox topology, the bridge must require an explicitly configured and preflighted workspace root; no Windows path should be assumed. Docker/sandbox policy, not model cooperation, should deny `.env`, secrets, external directories, global installs, arbitrary shell access and unapproved egress.
 

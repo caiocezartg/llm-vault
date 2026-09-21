@@ -368,3 +368,8 @@ Files created:
 - Added `concepts/npm-stage-only-tokens.md`: explicit CI staging authority, human/2FA promotion, January 2027 migration boundary, and residual token-authority caveat.
 - Updated `entities/models/gpt-5-6.md` with the separate GitHub Copilot removal of GPT-5.5 on 19 October, its suggested Sol successor, and the distinct policy/availability boundary.
 - Updated `index.md` date and page count.
+
+## [2026-09-21] update | Plugin4Shell client-side plugin integrity boundary
+- Added `raw/articles/air-plugin4shell-2026-09-17.md`, preserving a bounded disclosure excerpt and body checksum from AIR Security.
+- Updated `comparisons/model-routing-hermes-opencode-pi.md` with the post-resolution commit-verification rule, reported vendor-remediation boundary, and retained external controls for plugin/skill distribution.
+- Updated `index.md` date; no page was added or renamed.
