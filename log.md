@@ -373,3 +373,8 @@ Files created:
 - Added `raw/articles/air-plugin4shell-2026-09-17.md`, preserving a bounded disclosure excerpt and body checksum from AIR Security.
 - Updated `comparisons/model-routing-hermes-opencode-pi.md` with the post-resolution commit-verification rule, reported vendor-remediation boundary, and retained external controls for plugin/skill distribution.
 - Updated `index.md` date; no page was added or renamed.
+
+## [2026-09-22] ingest | Grok 4.7 coding-model evaluation and routing boundary
+- Added `raw/articles/spacexai-grok-4-7-2026-09-21.md`, a bounded immutable primary-source record with a SHA-256 body checksum.
+- Added `entities/models/grok-4-7.md`: official availability, independent model-plus-harness evaluation, higher token-use caveat, and controlled routing-trial requirements.
+- Updated `index.md` date and page count.

@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-09-21 | Total pages: 38
+> Last updated: 2026-09-22 | Total pages: 39
 
 ## Concepts
 
@@ -21,6 +21,7 @@
 - [[entities/models/deepseek-v4-1-flash]] — MIT-licensed open-weight V4.1 Flash: API-reroute boundary, efficiency claims, and controlled coding/agent trial protocol.
 - [[entities/models/gemini-3-6-flash]] — Gemini Flash 3.6/3.7/3.8 for agentic/coding trials; migration, availability, cost-per-task and controlled-evaluation boundaries.
 - [[entities/models/glm-5-3]] — Z.ai’s GLM-5.3 family: post-trained coding/agent model plus the open-weight GLM-5.3-Flash variant; vendor-benchmark caveats and controlled-trial boundary.
+- [[entities/models/grok-4-7]] — SpaceXAI’s coding/knowledge-work model: independent model-plus-harness eval, higher token-use caveat, and controlled routing-trial guidance.
 - [[entities/models/gpt-5-6]] — GPT-5.6 family: current availability, evaluation evidence, reliability caveats, and controlled adoption guidance.
 - [[entities/models/gpt-6-astra]] — OpenAI’s GPT-6 Astra: release, independent evaluation boundary, costs and controlled routing-trial guidance.
 - [[entities/models/kimi-k3]] — Kimi K3: API-available 2.8T model; integration requirements, first-party benchmark caveats, and controlled-trial guidance.
