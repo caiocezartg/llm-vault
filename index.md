@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-09-22 | Total pages: 39
+> Last updated: 2026-09-23 | Total pages: 41
 
 ## Concepts
 
@@ -18,12 +18,14 @@
 - [[entities/models/bonsai-27b]] — Low-bit Qwen3.6-27B derivatives for bounded local inference; benchmark and long-horizon coding caveats included.
 - [[entities/models/claude-fable-5-1]] — Anthropic's Fable 5.1: API migration, retention, cost-evidence and controlled-trial boundaries for long-running coding/research tasks.
 - [[entities/models/claude-opus-5]] — Anthropic flagship model for high-capability coding/review trials; model/fallback behavior and controlled-evaluation guidance.
+- [[entities/models/claude-opus-5-5]] — New lower-cost Opus route; API migration limits, Claude Code defaulting and controlled evaluation boundaries.
 - [[entities/models/deepseek-v4-1-flash]] — MIT-licensed open-weight V4.1 Flash: API-reroute boundary, efficiency claims, and controlled coding/agent trial protocol.
 - [[entities/models/gemini-3-6-flash]] — Gemini Flash 3.6/3.7/3.8 for agentic/coding trials; migration, availability, cost-per-task and controlled-evaluation boundaries.
 - [[entities/models/glm-5-3]] — Z.ai’s GLM-5.3 family: post-trained coding/agent model plus the open-weight GLM-5.3-Flash variant; vendor-benchmark caveats and controlled-trial boundary.
 - [[entities/models/grok-4-7]] — SpaceXAI’s coding/knowledge-work model: independent model-plus-harness eval, higher token-use caveat, and controlled routing-trial guidance.
 - [[entities/models/gpt-5-6]] — GPT-5.6 family: current availability, evaluation evidence, reliability caveats, and controlled adoption guidance.
 - [[entities/models/gpt-6-astra]] — OpenAI’s GPT-6 Astra: release, independent evaluation boundary, costs and controlled routing-trial guidance.
+- [[entities/models/gpt-6-sol-luna]] — Lower-cost GPT-6 routes; cost-focused routing and controlled-evaluation guidance rather than a blanket capability claim.
 - [[entities/models/kimi-k3]] — Kimi K3: API-available 2.8T model; integration requirements, first-party benchmark caveats, and controlled-trial guidance.
 - [[entities/models/lfm25-26b]] — Open-weight 2.69B model for bounded local tool loops; its own model card excludes agentic coding and requires controlled evaluation.
 - [[entities/models/muse-glimmer]] — Meta's Apache-2.0 30B local-agent model; vendor performance claims remain bounded by controlled evaluation.

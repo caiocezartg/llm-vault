@@ -378,3 +378,9 @@ Files created:
 - Added `raw/articles/spacexai-grok-4-7-2026-09-21.md`, a bounded immutable primary-source record with a SHA-256 body checksum.
 - Added `entities/models/grok-4-7.md`: official availability, independent model-plus-harness evaluation, higher token-use caveat, and controlled routing-trial requirements.
 - Updated `index.md` date and page count.
+
+## [2026-09-23] ingest | Claude Opus 5.5 and GPT-6 Sol/Luna routing updates
+- Added immutable bounded raw records with SHA-256 body checksums: `raw/articles/anthropic-claude-opus-5-5-2026-09-22.md` and `raw/articles/openai-gpt-6-sol-luna-2026-09-22.md`.
+- Added `entities/models/claude-opus-5-5.md`: API compatibility constraints, Claude Code defaulting/security-fix boundary, and controlled coding-agent evaluation guidance.
+- Added `entities/models/gpt-6-sol-luna.md`: lower-cost GPT-6 routing, mixed early evaluation boundary, and retained-task trial protocol.
+- Updated `index.md` date and page count.
