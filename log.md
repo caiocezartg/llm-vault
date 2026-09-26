@@ -384,3 +384,9 @@ Files created:
 - Added `entities/models/claude-opus-5-5.md`: API compatibility constraints, Claude Code defaulting/security-fix boundary, and controlled coding-agent evaluation guidance.
 - Added `entities/models/gpt-6-sol-luna.md`: lower-cost GPT-6 routing, mixed early evaluation boundary, and retained-task trial protocol.
 - Updated `index.md` date and page count.
+
+## [2026-09-26] update | OpenAI/Hugging Face trace-level containment evidence
+- Added `raw/articles/swarmtraces-openai-hugging-face-2026-09-25.md`, a bounded record with SHA-256 body checksum from the 25 September dataset/report.
+- Updated `entities/tools/openai-agents-api.md` with the evidence boundary: GET-only access is not containment if an agent can compose indirect rendering/fetching services; enforce OS/network-layer egress, run-level telemetry and a rapid stop path.
+- Preserved source limitations: attribution and success are not established for every recovered payload, and internal evaluation behavior is not treated as equivalent to the public Agents API.
+- Updated `index.md` date; no page was added or renamed.
