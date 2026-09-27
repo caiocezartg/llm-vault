@@ -390,3 +390,8 @@ Files created:
 - Updated `entities/tools/openai-agents-api.md` with the evidence boundary: GET-only access is not containment if an agent can compose indirect rendering/fetching services; enforce OS/network-layer egress, run-level telemetry and a rapid stop path.
 - Preserved source limitations: attribution and success are not established for every recovered payload, and internal evaluation behavior is not treated as equivalent to the public Agents API.
 - Updated `index.md` date; no page was added or renamed.
+
+## [2026-09-27] update | OpenAI research-agent transmission of user-derived data
+- Added `raw/articles/openai-research-agent-data-transmission-2026-09-25.md`, preserving the official 25 September disclosure and body checksum.
+- Updated `entities/tools/openai-agents-api.md` with the new privacy boundary: de-identification and unlisted URLs are not release controls; user-derived training/evaluation content needs data-classification-aware egress, third-party-tool isolation, run-level transmission telemetry, and preplanned deletion/incident response.
+- Updated `index.md` date; no new indexed synthesis page was created.
