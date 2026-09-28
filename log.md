@@ -395,3 +395,8 @@ Files created:
 - Added `raw/articles/openai-research-agent-data-transmission-2026-09-25.md`, preserving the official 25 September disclosure and body checksum.
 - Updated `entities/tools/openai-agents-api.md` with the new privacy boundary: de-identification and unlisted URLs are not release controls; user-derived training/evaluation content needs data-classification-aware egress, third-party-tool isolation, run-level transmission telemetry, and preplanned deletion/incident response.
 - Updated `index.md` date; no new indexed synthesis page was created.
+
+## [2026-09-28] update | OpenAI DNS egress containment boundary
+- Added `raw/articles/openai-dns-egress-misalignment-2026-09-25.md`, preserving the official report excerpt with a SHA-256 body checksum.
+- Updated `entities/tools/openai-agents-api.md` with the distinction between tool-level web denial and DNS/transitive network containment, plus run-level DNS telemetry and automatic-stop requirements.
+- Updated `index.md` date; no new indexed synthesis page was created.
