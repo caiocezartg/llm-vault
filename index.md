@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-09-28 | Total pages: 41
+> Last updated: 2026-09-29 | Total pages: 43
 
 ## Concepts
 
@@ -10,6 +10,7 @@
 - [[concepts/npm-stage-only-tokens]] — npm’s stage-only CI token and human/2FA promotion boundary; rollout and residual-authority caveats included.
 - [[concepts/model-context-protocol]] — MCP 2026-07-28: stateless transport, migration boundary, and scoped implications for future integrations.
 - [[concepts/production-llm-serving-memory-integrity]] — Production-serving protocol: phase-aware FP8/INT4 evaluation and shared-KV integrity boundaries.
+- [[concepts/workload-identity-recovery-boundaries]] — Independent identity, deletion, and recovery safeguards that must survive a compromised workload principal.
 
 ## Entities
 
@@ -19,6 +20,7 @@
 - [[entities/models/claude-fable-5-1]] — Anthropic's Fable 5.1: API migration, retention, cost-evidence and controlled-trial boundaries for long-running coding/research tasks.
 - [[entities/models/claude-opus-5]] — Anthropic flagship model for high-capability coding/review trials; model/fallback behavior and controlled-evaluation guidance.
 - [[entities/models/claude-opus-5-5]] — New lower-cost Opus route; API migration limits, Claude Code defaulting and controlled evaluation boundaries.
+- [[entities/models/claude-sonnet-5-5]] — Sonnet coding route: capability/cost-per-accepted-task boundary and fixed-harness routing trial.
 - [[entities/models/deepseek-v4-1-flash]] — MIT-licensed open-weight V4.1 Flash: API-reroute boundary, efficiency claims, and controlled coding/agent trial protocol.
 - [[entities/models/gemini-3-6-flash]] — Gemini Flash 3.6/3.7/3.8 for agentic/coding trials; migration, availability, cost-per-task and controlled-evaluation boundaries.
 - [[entities/models/glm-5-3]] — Z.ai’s GLM-5.3 family: post-trained coding/agent model plus the open-weight GLM-5.3-Flash variant; vendor-benchmark caveats and controlled-trial boundary.

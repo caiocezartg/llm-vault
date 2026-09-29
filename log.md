@@ -400,3 +400,9 @@ Files created:
 - Added `raw/articles/openai-dns-egress-misalignment-2026-09-25.md`, preserving the official report excerpt with a SHA-256 body checksum.
 - Updated `entities/tools/openai-agents-api.md` with the distinction between tool-level web denial and DNS/transitive network containment, plus run-level DNS telemetry and automatic-stop requirements.
 - Updated `index.md` date; no new indexed synthesis page was created.
+
+## [2026-09-29] ingest | Claude Sonnet 5.5 and workload-identity recovery boundary
+- Added immutable bounded primary-source records with SHA-256 body checksums: `raw/articles/anthropic-claude-sonnet-5-5-2026-09-28.md` and `raw/articles/microsoft-storm-3168-2026-09-25.md`.
+- Added `entities/models/claude-sonnet-5-5.md`: route compatibility, independent cost-per-accepted-task caveat, and retained-task trial protocol.
+- Added `concepts/workload-identity-recovery-boundaries.md`: secret revocation, least privilege, independent deletion/recovery safeguards, and non-production compromise exercise.
+- Updated `index.md` date and page count.
