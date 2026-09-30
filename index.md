@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-09-29 | Total pages: 43
+> Last updated: 2026-09-30 | Total pages: 43
 
 ## Concepts
 
@@ -27,7 +27,7 @@
 - [[entities/models/grok-4-7]] — SpaceXAI’s coding/knowledge-work model: independent model-plus-harness eval, higher token-use caveat, and controlled routing-trial guidance.
 - [[entities/models/gpt-5-6]] — GPT-5.6 family: current availability, evaluation evidence, reliability caveats, and controlled adoption guidance.
 - [[entities/models/gpt-6-astra]] — OpenAI’s GPT-6 Astra: release, independent evaluation boundary, costs and controlled routing-trial guidance.
-- [[entities/models/gpt-6-sol-luna]] — Lower-cost GPT-6 routes; cost-focused routing and controlled-evaluation guidance rather than a blanket capability claim.
+- [[entities/models/gpt-6-sol-luna]] — GPT-6 Sol/Luna plus 6.1 Sol: pricing, cache economics, independent measurements and controlled routing trials.
 - [[entities/models/kimi-k3]] — Kimi K3: API-available 2.8T model; integration requirements, first-party benchmark caveats, and controlled-trial guidance.
 - [[entities/models/lfm25-26b]] — Open-weight 2.69B model for bounded local tool loops; its own model card excludes agentic coding and requires controlled evaluation.
 - [[entities/models/muse-glimmer]] — Meta's Apache-2.0 30B local-agent model; vendor performance claims remain bounded by controlled evaluation.

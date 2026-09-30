@@ -406,3 +406,8 @@ Files created:
 - Added `entities/models/claude-sonnet-5-5.md`: route compatibility, independent cost-per-accepted-task caveat, and retained-task trial protocol.
 - Added `concepts/workload-identity-recovery-boundaries.md`: secret revocation, least privilege, independent deletion/recovery safeguards, and non-production compromise exercise.
 - Updated `index.md` date and page count.
+
+## [2026-09-30] update | GPT-6.1 Sol routing boundary
+- Added immutable bounded primary-source record with a SHA-256 body checksum: `raw/articles/openai-gpt-6-1-sol-2026-09-29.md`.
+- Updated `entities/models/gpt-6-sol-luna.md` with GPT-6.1 Sol availability, cache economics, independent aggregate measurements and controlled trial requirements.
+- Updated `index.md` date; no new indexed page was created.
