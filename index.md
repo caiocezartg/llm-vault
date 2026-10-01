@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-09-30 | Total pages: 43
+> Last updated: 2026-10-01 | Total pages: 44
 
 ## Concepts
 
@@ -23,6 +23,7 @@
 - [[entities/models/claude-sonnet-5-5]] — Sonnet coding route: capability/cost-per-accepted-task boundary and fixed-harness routing trial.
 - [[entities/models/deepseek-v4-1-flash]] — MIT-licensed open-weight V4.1 Flash: API-reroute boundary, efficiency claims, and controlled coding/agent trial protocol.
 - [[entities/models/gemini-3-6-flash]] — Gemini Flash 3.6/3.7/3.8 for agentic/coding trials; migration, availability, cost-per-task and controlled-evaluation boundaries.
+- [[entities/models/gemini-4-argon]] — Gemini 4 Argon: access-restricted long-horizon frontier model; vendor benchmarks are distinct from a future controlled routing trial.
 - [[entities/models/glm-5-3]] — Z.ai’s GLM-5.3 family: post-trained coding/agent model plus the open-weight GLM-5.3-Flash variant; vendor-benchmark caveats and controlled-trial boundary.
 - [[entities/models/grok-4-7]] — SpaceXAI’s coding/knowledge-work model: independent model-plus-harness eval, higher token-use caveat, and controlled routing-trial guidance.
 - [[entities/models/gpt-5-6]] — GPT-5.6 family: current availability, evaluation evidence, reliability caveats, and controlled adoption guidance.

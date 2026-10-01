@@ -411,3 +411,8 @@ Files created:
 - Added immutable bounded primary-source record with a SHA-256 body checksum: `raw/articles/openai-gpt-6-1-sol-2026-09-29.md`.
 - Updated `entities/models/gpt-6-sol-luna.md` with GPT-6.1 Sol availability, cache economics, independent aggregate measurements and controlled trial requirements.
 - Updated `index.md` date; no new indexed page was created.
+
+## [2026-10-01] ingest | Gemini 4 Argon
+- Added `raw/articles/google-gemini-4-argon-2026-09-30.md`, preserving a bounded Google announcement record with immutable-body SHA-256.
+- Added `entities/models/gemini-4-argon.md` with access restriction, integration/pricing facts, vendor-evidence boundary, Hacker News attention signal and retained-task trial protocol.
+- Updated `index.md` date and page count.
