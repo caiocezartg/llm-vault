@@ -1,0 +1,6 @@
+---
+source_url: https://openai.com/index/introducing-dots/
+ingested: 2026-10-02
+sha256: 3459c1164e9c02c973d237143061eb8274d0dc527ed2368d4792d1e931a68aa0
+---
+OpenAI announced Dots on 29 September 2026 as always-on agents powered by GPT-6 Astra. Each Dot has a cloud computer and browser, carries context across ChatGPT, Slack and Teams, and can work toward goals asynchronously. The initial rollout covers eligible ChatGPT Pro and Business Premium users, with Enterprise beta activation by an administrator. OpenAI says a Dot can connect to more than 4,000 apps. Proactive research is restricted to read-only connected-app operations; users can inspect work and approve actions when needed. The announcement demonstrates a coding workflow in which a Dot turns feedback into scoped, tested changes and PRs for review, but this is a vendor example rather than independent evidence of coding reliability. Conversations with a Dot do not consume ChatGPT usage limits; tasks started in Codex or ChatGPT Work consume the respective usage limits.

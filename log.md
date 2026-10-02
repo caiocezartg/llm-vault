@@ -416,3 +416,9 @@ Files created:
 - Added `raw/articles/google-gemini-4-argon-2026-09-30.md`, preserving a bounded Google announcement record with immutable-body SHA-256.
 - Added `entities/models/gemini-4-argon.md` with access restriction, integration/pricing facts, vendor-evidence boundary, Hacker News attention signal and retained-task trial protocol.
 - Updated `index.md` date and page count.
+
+## [2026-10-02] ingest | NVIDIA OpenShell and OpenAI Dots
+- Added immutable bounded raw records with SHA-256 body checksums: `raw/articles/nvidia-open-agent-safety-platform-2026-09-28.md` and `raw/articles/openai-dots-2026-09-29.md`.
+- Added `entities/tools/nvidia-openshell.md`: policy-controlled Linux agent runtime, optional hardware-monitoring boundary, GitHub/Hacker News signals, and controlled-pilot requirements.
+- Added `entities/tools/openai-dots.md`: persistent managed-agent availability, workspace/control claims, community scrutiny, and the boundary between agent memory and independent engineering acceptance.
+- Updated `index.md` date and page count.

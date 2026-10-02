@@ -1,0 +1,6 @@
+---
+source_url: https://nvidianews.nvidia.com/news/open-agent-safety-platform
+ingested: 2026-10-02
+sha256: 155fb1db0243b3a289864b43935bdabccf7c7ebe66ea0b62de3a19836d739f4d
+---
+NVIDIA announced the Open Agent Safety Platform on 28 September 2026. It combines OpenShell, Apache-2.0 open-source runtime software, with the Sentry reference system for optional out-of-band monitoring on BlueField-4 DPUs. OpenShell provides sandbox runtime controls, policy tracing and enforcement; its documentation specifies kernel-level isolation, declarative YAML policies, filesystem restrictions, network restrictions, unprivileged process identity, seccomp restrictions and provider credential resolution outside the agent workload. NVIDIA says Sentry can independently monitor agent behavior and quarantine agents that leave software boundaries, but its hardware claims and performance must be independently validated. OpenShell 0.1.x documentation lists secure coding-agent use cases for Claude Code, OpenCode, Codex and GitHub Copilot CLI. The platform's reference design is not a replacement for narrow task authority, source-controlled policy review, isolated credentials, external acceptance gates, or independent security evaluation.

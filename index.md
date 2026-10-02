@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-10-01 | Total pages: 44
+> Last updated: 2026-10-02 | Total pages: 46
 
 ## Concepts
 
@@ -42,8 +42,10 @@
 - [[entities/tools/cloudflare-security-audit-skill]] — Multi-phase agentic security-audit skill with adversarial validation and structured evidence; controlled-trial guidance included.
 - [[entities/tools/hermes-agent]] — Hermes Agent as the multi-profile agent runtime using skills, tools, cron, memory, and session search.
 - [[entities/tools/mindwalk]] — Local, open-source visual replay and inspection of coding-agent sessions; useful for trajectory diagnosis, not as an outcome oracle.
+- [[entities/tools/nvidia-openshell]] — Open-source agent runtime with policy-controlled sandboxing; keep its software controls distinct from optional hardware claims and external acceptance gates.
 - [[entities/tools/onecli]] — Open-source credential gateway for agents: network-side injection and policy enforcement; test the full injection surface and fail-closed approval paths before any production use.
 - [[entities/tools/openai-agents-api]] — Public-beta managed Codex harness; environment and external-acceptance control boundaries remain with the engineering team.
+- [[entities/tools/openai-dots]] — OpenAI's persistent cloud-agent product; managed workspace and controls warrant a narrow, supervised evaluation rather than automatic workflow adoption.
 - [[entities/tools/openrouter]] — Model gateway/marketplace now joining Stripe; retain tested exit paths and treat continuity/neutrality as commitments to monitor.
 - [[entities/tools/orca]] — Worktree-native multi-agent ADE and coordination runtime; use discovery/spec skills upstream and retain executable gates plus independent acceptance.
 - [[entities/tools/qm]] — Y Combinator's open-source multi-agent organizational harness; retain scoped-isolation and production-effectiveness caveats pending a controlled trial.
