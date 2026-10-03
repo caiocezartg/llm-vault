@@ -1,7 +1,7 @@
 ---
 title: Model Routing Across Hermes, OpenCode, and Pi
 created: 2026-07-17
-updated: 2026-09-21
+updated: 2026-10-03
 type: comparison
 tags: [comparison, agent, agent-orchestration, workflow, hermes, tool, openrouter]
 sources:
@@ -32,6 +32,7 @@ sources:
   - raw/articles/openrouter-stripe-2026-08-20.md
   - raw/articles/github-hydrafusion-2026-09-04.md
   - raw/articles/air-plugin4shell-2026-09-17.md
+  - raw/articles/github-copilot-dynamic-workflows-2026-10-01.md
   - https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app
 confidence: high
 contested: false
@@ -89,6 +90,12 @@ This complements [[coding/architecture/kitdev-deterministic-agentic-workflows]]:
 GitHub's 4 September 2026 **HydraFusion** preview is a concrete hosted implementation of per-turn compound routing: it can select a single model, a cheap-first cascade with a quality gate, or a cross-family read-only critique followed by one revision. The useful implementation boundaries are complete accounting of every leg, explicit timeout/cancellation, tool-less review isolation, no patch on failed validation, and preflight validation of model bindings. ^[raw/articles/github-hydrafusion-2026-09-04.md]
 
 It is a trial reference, not a portable control plane: the curated model roster is not selectable or fixed, intermediate drafts are withheld, pricing aggregates underlying-model token use, and the preview is currently scoped to first-turn single-prompt tasks. GitHub's own results trade quality for cost on two of three reported benchmarks, so do not generalize its 67% TerminalBench saving to repository work. Preserve requested/effective model receipts, role-level cost/latency, explicit human intervention, isolated review, and repository-native acceptance gates. Compare against [[coding/architecture/merge-gated-dag-coding-workflow]] and [[entities/tools/hermes-agent]].
+
+### GitHub Copilot Dynamic Workflows: explicit graph, still not an authority boundary
+
+GitHub’s 1 October 2026 preview adds code-defined sequential/parallel orchestration, structured handoffs, tool/service steps, subagent checks and human pause/resume points to Copilot CLI, the Copilot app and the SDK. It is closer to an explicit workflow graph than model-planned `/fleet` or Autopilot, and it is therefore useful as a comparative reference for typed work execution. ^[raw/articles/github-copilot-dynamic-workflows-2026-10-01.md]
+
+However, workflow code and inherited extension/session permissions do not replace an external task packet, isolated execution, scoped credentials, gate receipts or independent acceptance. GitHub provides no quality, security or cost benchmark for the preview. Keep the distinction between orchestration and authority explicit: a code-defined graph can decide sequence and pause points; repository-native gates and human policy still decide whether a change is accepted.
 
 ## Hermes delegating implementation to OpenCode
 

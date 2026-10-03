@@ -1,7 +1,7 @@
 ---
 title: Merge-Gated DAG Coding Workflow
 created: 2026-07-25
-updated: 2026-09-08
+updated: 2026-10-03
 type: architecture
 tags: [agent, agent-orchestration, multi-agent, workflow, coding, architecture, testing, devops]
 sources:
@@ -11,6 +11,7 @@ sources:
   - https://fletch.sh/blog/git-worktrees-vs-clones-for-ai-agents/
   - https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
   - raw/articles/openai-research-acceleration-2026-09-06.md
+  - raw/articles/apple-full-disk-access-agent-boundary-2026-10-02.md
 confidence: high
 contested: false
 contradictions: []
@@ -129,6 +130,10 @@ A wave is a snapshot for observability, not a barrier. A downstream task may lau
 OpenAI's 06/09/2026 internal snapshot reports 3.1 coding-agent workdays of runtime for each human workday in its research organization, including direct agents and downstream subagents. This is a scale signal for concurrent execution—not a portable productivity multiplier: OpenAI also reports expanded compute capacity and does not isolate the causal contribution of agents. ^[raw/articles/openai-research-acceleration-2026-09-06.md]
 
 More importantly for a control plane, its outcome analysis says that more than half of successful tasks estimated at four to eight human-hours required at least one human intervention. Treat intervention as a first-class state transition with an explicit owner, evidence and re-entry condition; do not hide it in a chat thread or let aggregate agent runtime stand in for accepted output. The relevant measures are accepted tasks, gate/review escape rate, rework, time-to-accepted-change and human intervention cost. ^[raw/articles/openai-research-acceleration-2026-09-06.md]
+
+## App-level permissions are inherited authority
+
+Apple’s 2 October 2026 Full Disk Access announcement makes a portable agent-workflow boundary explicit: a broad permission granted to the terminal, editor or desktop agent host is inherited by arbitrary scripts, plugins and agent actions it launches. User consent can be necessary, but it is not a task-scoped security control. Keep agent execution in a minimal workspace with task-scoped filesystem, network and credential authority; do not grant Full Disk Access to a general-purpose coding-agent host merely to make one workflow convenient. This does not predict Apple’s final control mechanics. ^[raw/articles/apple-full-disk-access-agent-boundary-2026-10-02.md]
 
 ## Minimal practical rollout
 

@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-10-02 | Total pages: 46
+> Last updated: 2026-10-03 | Total pages: 47
 
 ## Concepts
 
@@ -40,6 +40,7 @@
 - [[entities/tools/astro-triagebot-action]] — Skills-backed GitHub Action for staged issue triage; OpenAI provider support and pilot-boundary guidance.
 - [[entities/tools/cloudflare-os]] — Apache-2.0 agent workspace/control-plane candidate; evaluate authorization inheritance and containment through a controlled pilot, not vendor claims.
 - [[entities/tools/cloudflare-security-audit-skill]] — Multi-phase agentic security-audit skill with adversarial validation and structured evidence; controlled-trial guidance included.
+- [[entities/tools/dwarfstar-ds4]] — Local C inference engine for selected open-weight MoE models; integration ecosystem, evidence boundary, and controlled runtime evaluation protocol.
 - [[entities/tools/hermes-agent]] — Hermes Agent as the multi-profile agent runtime using skills, tools, cron, memory, and session search.
 - [[entities/tools/mindwalk]] — Local, open-source visual replay and inspection of coding-agent sessions; useful for trajectory diagnosis, not as an outcome oracle.
 - [[entities/tools/nvidia-openshell]] — Open-source agent runtime with policy-controlled sandboxing; keep its software controls distinct from optional hardware claims and external acceptance gates.

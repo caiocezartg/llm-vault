@@ -422,3 +422,11 @@ Files created:
 - Added `entities/tools/nvidia-openshell.md`: policy-controlled Linux agent runtime, optional hardware-monitoring boundary, GitHub/Hacker News signals, and controlled-pilot requirements.
 - Added `entities/tools/openai-dots.md`: persistent managed-agent availability, workspace/control claims, community scrutiny, and the boundary between agent memory and independent engineering acceptance.
 - Updated `index.md` date and page count.
+
+## [2026-10-03] ingest | DwarfStar 4, agent-permission boundary, and operational routing signals
+- Added immutable bounded raw records with SHA-256 body checksums: `raw/articles/antirez-ds4-current-state-2026-10-03.md`, `raw/articles/apple-full-disk-access-agent-boundary-2026-10-02.md`, `raw/articles/wagtail-glm-53-flash-operational-report-2026-10-02.md`, and `raw/articles/github-copilot-dynamic-workflows-2026-10-01.md`.
+- Added `entities/tools/dwarfstar-ds4.md`: local MoE inference scope, community/ecosystem signal, self-benchmark caveat, and controlled evaluation boundary.
+- Updated `entities/models/glm-5-3.md`: Wagtail’s month-long operational account supports a fallback and outcome-measurement requirement, not a general model-cost or quality conclusion.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md`: broad host-app authority is inherited by agent/plugin actions; retain task-scoped filesystem, network, credential and acceptance boundaries.
+- Updated `comparisons/model-routing-hermes-opencode-pi.md`: GitHub Copilot Dynamic Workflows is an explicit execution graph reference, but it remains distinct from authority, acceptance and audit controls.
+- Updated `index.md` date and page count.
