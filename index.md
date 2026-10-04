@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-10-03 | Total pages: 47
+> Last updated: 2026-10-04 | Total pages: 49
 
 ## Concepts
 
@@ -30,6 +30,7 @@
 - [[entities/models/gpt-6-astra]] — OpenAI’s GPT-6 Astra: release, independent evaluation boundary, costs and controlled routing-trial guidance.
 - [[entities/models/gpt-6-sol-luna]] — GPT-6 Sol/Luna plus 6.1 Sol: pricing, cache economics, independent measurements and controlled routing trials.
 - [[entities/models/kimi-k3]] — Kimi K3: API-available 2.8T model; integration requirements, first-party benchmark caveats, and controlled-trial guidance.
+- [[entities/models/kolibri]] — Aleph Alpha’s Apache-2.0 78B/3.46B-active bilingual MoE; hardware envelope, vendor-evidence boundary and controlled self-hosted trial protocol.
 - [[entities/models/lfm25-26b]] — Open-weight 2.69B model for bounded local tool loops; its own model card excludes agentic coding and requires controlled evaluation.
 - [[entities/models/muse-glimmer]] — Meta's Apache-2.0 30B local-agent model; vendor performance claims remain bounded by controlled evaluation.
 - [[entities/models/qwen3-8-max]] — Qwen’s 2.4T/95B-active flagship: API trial candidate with promised open weights; retain vendor-evidence and controlled-evaluation boundaries.
@@ -38,6 +39,7 @@
 ### Tools
 
 - [[entities/tools/astro-triagebot-action]] — Skills-backed GitHub Action for staged issue triage; OpenAI provider support and pilot-boundary guidance.
+- [[entities/tools/cloudflare-artifacts]] — Cloudflare’s open-beta Git/versioned-context primitives for agent workflows; token, event, preview and independent-acceptance boundaries.
 - [[entities/tools/cloudflare-os]] — Apache-2.0 agent workspace/control-plane candidate; evaluate authorization inheritance and containment through a controlled pilot, not vendor claims.
 - [[entities/tools/cloudflare-security-audit-skill]] — Multi-phase agentic security-audit skill with adversarial validation and structured evidence; controlled-trial guidance included.
 - [[entities/tools/dwarfstar-ds4]] — Local C inference engine for selected open-weight MoE models; integration ecosystem, evidence boundary, and controlled runtime evaluation protocol.

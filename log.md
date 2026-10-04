@@ -430,3 +430,9 @@ Files created:
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md`: broad host-app authority is inherited by agent/plugin actions; retain task-scoped filesystem, network, credential and acceptance boundaries.
 - Updated `comparisons/model-routing-hermes-opencode-pi.md`: GitHub Copilot Dynamic Workflows is an explicit execution graph reference, but it remains distinct from authority, acceptance and audit controls.
 - Updated `index.md` date and page count.
+
+## [2026-10-04] ingest | Kolibri and Cloudflare Artifacts
+- Added immutable bounded raw records with SHA-256 body checksums: `raw/articles/aleph-alpha-kolibri-2026-10-03.md` and `raw/articles/cloudflare-artifacts-open-beta-2026-10-04.md`.
+- Added `entities/models/kolibri.md`: Apache-2.0 bilingual MoE availability, self-hosting hardware envelope, vendor-evidence boundary and controlled local-inference trial guidance.
+- Added `entities/tools/cloudflare-artifacts.md`: open-beta Git/context/event primitives, scoped-token/deployment boundaries and a controlled trial protocol for agent workflows.
+- Updated `index.md` date and page count.
