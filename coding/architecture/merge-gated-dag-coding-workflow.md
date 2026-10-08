@@ -12,6 +12,7 @@ sources:
   - https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches
   - raw/articles/openai-research-acceleration-2026-09-06.md
   - raw/articles/apple-full-disk-access-agent-boundary-2026-10-02.md
+  - raw/articles/adversa-cryptographic-context-injection-copilot-2026-10-06.md
 confidence: high
 contested: false
 contradictions: []
@@ -134,6 +135,12 @@ More importantly for a control plane, its outcome analysis says that more than h
 ## App-level permissions are inherited authority
 
 Apple’s 2 October 2026 Full Disk Access announcement makes a portable agent-workflow boundary explicit: a broad permission granted to the terminal, editor or desktop agent host is inherited by arbitrary scripts, plugins and agent actions it launches. User consent can be necessary, but it is not a task-scoped security control. Keep agent execution in a minimal workspace with task-scoped filesystem, network and credential authority; do not grant Full Disk Access to a general-purpose coding-agent host merely to make one workflow convenient. This does not predict Apple’s final control mechanics. ^[raw/articles/apple-full-disk-access-agent-boundary-2026-10-02.md]
+
+## Cryptographic Context Injection keeps its source trust after decryption
+
+Adversa AI's October 2026 Copilot CLI demonstration adds a distinct trust-boundary rule: ciphertext fetched from an untrusted page does not become trusted merely because the agent decrypted it or because the plaintext arrives through the tool/runtime result channel. The reported chain links untrusted web content, local-file reads and unrelated outbound egress; it also varies by effective model, so a model refusal is not a policy boundary. The report has important limits — autopilot plus a permissive model are required, its rates are researcher-reported, and GitHub reportedly declined to classify the behavior as a product vulnerability — but the control implication is reusable. ^[raw/articles/adversa-cryptographic-context-injection-copilot-2026-10-06.md]
+
+For every agent run, preserve provenance and taint classification across fetch, execution, decryption, tool output and intermediate state. Record resolved tool arguments and connect read paths plus egress destinations to the same run ID; summaries written by the agent are not authoritative receipts. Enforce the paths it may read, short-lived credentials, and destination/method allowlists outside the model; require explicit review for operations that combine untrusted-content processing with access beyond the task workspace. This refines the broader egress and independent-verification controls in [[entities/tools/openai-agents-api]] and [[comparisons/model-routing-hermes-opencode-pi]].
 
 ## Minimal practical rollout
 

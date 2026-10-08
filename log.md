@@ -436,3 +436,8 @@ Files created:
 - Added `entities/models/kolibri.md`: Apache-2.0 bilingual MoE availability, self-hosting hardware envelope, vendor-evidence boundary and controlled local-inference trial guidance.
 - Added `entities/tools/cloudflare-artifacts.md`: open-beta Git/context/event primitives, scoped-token/deployment boundaries and a controlled trial protocol for agent workflows.
 - Updated `index.md` date and page count.
+
+## [2026-10-08] update | Cryptographic Context Injection trust boundary for coding agents
+- Added `raw/articles/adversa-cryptographic-context-injection-copilot-2026-10-06.md`, preserving the primary disclosure, independent CSO corroboration, and immutable-body checksum.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the durable rule that decryption/tool outputs derived from untrusted content retain their trust classification; require run-bound resolved traces and external path/egress enforcement rather than model refusals or agent summaries.
+- Updated `index.md` date; no indexed page was added or renamed.
