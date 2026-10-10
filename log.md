@@ -441,3 +441,8 @@ Files created:
 - Added `raw/articles/adversa-cryptographic-context-injection-copilot-2026-10-06.md`, preserving the primary disclosure, independent CSO corroboration, and immutable-body checksum.
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the durable rule that decryption/tool outputs derived from untrusted content retain their trust classification; require run-bound resolved traces and external path/egress enforcement rather than model refusals or agent summaries.
 - Updated `index.md` date; no indexed page was added or renamed.
+
+## [2026-10-10] ingest | Evidence on software-production bottlenecks after AI-agent adoption
+- Added `raw/papers/chen-stratton-ai-software-production-bottlenecks-2026-10-10.md`, a bounded immutable record of Chen and Stratton's observational study across 718 firms.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the explicit measurement boundary: code-generation throughput is not delivery throughput; track review capacity, acceptance, rework and time-to-accepted-change.
+- Updated `index.md` date; no indexed page was added or renamed.

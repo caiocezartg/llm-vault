@@ -1,7 +1,7 @@
 ---
 title: Merge-Gated DAG Coding Workflow
 created: 2026-07-25
-updated: 2026-10-03
+updated: 2026-10-10
 type: architecture
 tags: [agent, agent-orchestration, multi-agent, workflow, coding, architecture, testing, devops]
 sources:
@@ -13,6 +13,7 @@ sources:
   - raw/articles/openai-research-acceleration-2026-09-06.md
   - raw/articles/apple-full-disk-access-agent-boundary-2026-10-02.md
   - raw/articles/adversa-cryptographic-context-injection-copilot-2026-10-06.md
+  - raw/papers/chen-stratton-ai-software-production-bottlenecks-2026-10-10.md
 confidence: high
 contested: false
 contradictions: []
@@ -141,6 +142,12 @@ Apple’s 2 October 2026 Full Disk Access announcement makes a portable agent-wo
 Adversa AI's October 2026 Copilot CLI demonstration adds a distinct trust-boundary rule: ciphertext fetched from an untrusted page does not become trusted merely because the agent decrypted it or because the plaintext arrives through the tool/runtime result channel. The reported chain links untrusted web content, local-file reads and unrelated outbound egress; it also varies by effective model, so a model refusal is not a policy boundary. The report has important limits — autopilot plus a permissive model are required, its rates are researcher-reported, and GitHub reportedly declined to classify the behavior as a product vulnerability — but the control implication is reusable. ^[raw/articles/adversa-cryptographic-context-injection-copilot-2026-10-06.md]
 
 For every agent run, preserve provenance and taint classification across fetch, execution, decryption, tool output and intermediate state. Record resolved tool arguments and connect read paths plus egress destinations to the same run ID; summaries written by the agent are not authoritative receipts. Enforce the paths it may read, short-lived credentials, and destination/method allowlists outside the model; require explicit review for operations that combine untrusted-content processing with access beyond the task workspace. This refines the broader egress and independent-verification controls in [[entities/tools/openai-agents-api]] and [[comparisons/model-routing-hermes-opencode-pi]].
+
+## Review capacity is a first-class throughput constraint
+
+Chen and Stratton's observational study of 718 firms reports that coding-agent adoption correlates with substantially more code, commits and pull requests, but not a statistically significant change in firm-level issue or epic resolution in its January 2021–March 2026 sample. Its proposed mechanism is code review: PR-to-merge time rises, more PRs require revision, comments increase, and firms assign a larger share of workers to review. The evidence is not an experiment and cannot determine the outcome for a particular model, repository or team; it is a reason to instrument the production pipeline rather than treat token volume or diff count as delivery. ^[raw/papers/chen-stratton-ai-software-production-bottlenecks-2026-10-10.md]
+
+Measure review queue depth and latency, revision/rework rate, executable-evidence coverage, reviewer intervention, acceptance rate and time-to-accepted-change alongside model cost and generation speed. Raise parallel-agent concurrency only when these downstream measures retain headroom. Use scoped tasks, SHA-bound gates, reproducible test evidence and independently reviewed diffs to reduce avoidable review load; do not replace review with an unaudited agent verdict.
 
 ## Minimal practical rollout
 
