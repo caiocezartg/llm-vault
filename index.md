@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-10-10 | Total pages: 49
+> Last updated: 2026-10-11 | Total pages: 50
 
 ## Concepts
 
@@ -45,6 +45,7 @@
 - [[entities/tools/dwarfstar-ds4]] — Local C inference engine for selected open-weight MoE models; integration ecosystem, evidence boundary, and controlled runtime evaluation protocol.
 - [[entities/tools/hermes-agent]] — Hermes Agent as the multi-profile agent runtime using skills, tools, cron, memory, and session search.
 - [[entities/tools/mindwalk]] — Local, open-source visual replay and inspection of coding-agent sessions; useful for trajectory diagnosis, not as an outcome oracle.
+- [[entities/tools/microsoft-execution-containers]] — Microsoft’s stable, policy-driven execution SDK; separate backend guarantees and test containment before relying on it for agents.
 - [[entities/tools/nvidia-openshell]] — Open-source agent runtime with policy-controlled sandboxing; keep its software controls distinct from optional hardware claims and external acceptance gates.
 - [[entities/tools/onecli]] — Open-source credential gateway for agents: network-side injection and policy enforcement; test the full injection surface and fail-closed approval paths before any production use.
 - [[entities/tools/openai-agents-api]] — Public-beta managed Codex harness; environment and external-acceptance control boundaries remain with the engineering team.

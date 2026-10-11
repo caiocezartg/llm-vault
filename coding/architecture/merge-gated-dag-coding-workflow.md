@@ -1,7 +1,7 @@
 ---
 title: Merge-Gated DAG Coding Workflow
 created: 2026-07-25
-updated: 2026-10-10
+updated: 2026-10-11
 type: architecture
 tags: [agent, agent-orchestration, multi-agent, workflow, coding, architecture, testing, devops]
 sources:
@@ -14,6 +14,8 @@ sources:
   - raw/articles/apple-full-disk-access-agent-boundary-2026-10-02.md
   - raw/articles/adversa-cryptographic-context-injection-copilot-2026-10-06.md
   - raw/papers/chen-stratton-ai-software-production-bottlenecks-2026-10-10.md
+  - raw/articles/cockroach-molt-sinai-2026-10-09.md
+  - raw/articles/microsoft-mxc-v1-2026-10-07.md
 confidence: high
 contested: false
 contradictions: []
@@ -161,4 +163,14 @@ Start with a control-plane-first pilot because concurrent autonomous work is alr
 6. Human merge; no autonomous merge initially.
 7. Five to ten fixture/real low-risk tasks before adding model routing, auto-remediation, release automation or more reviewer agents.
 
-Related: [[comparisons/model-routing-hermes-opencode-pi]], [[entities/tools/hermes-agent]] and [[entities/tools/orca]].
+## Evidence from Cockroach Labs' MOLT Sinai pipeline
+
+Cockroach Labs' first-party five-month report provides a useful operational counterweight to throughput-oriented agent demonstrations. Its stated “teaching hospital” workflow combines issue decomposition, reviewed plans, separate implementer and reviewer roles, explicit discharge conditions, periodic recovery/process roles, and human escalation. For a Db2 migration feature, the company reports 32 decomposition/follow-up issues, 27 merged PRs, 55 review returns and nine escalations; these are implementation-specific self-reported figures, not a portable benchmark. ^[raw/articles/cockroach-molt-sinai-2026-10-09.md]
+
+The transferable result is the control pattern, not the hospital vocabulary or reported speed: require planning before implementation, separate implementation from review, expose blocked/stalled states, make merge conditions executable, and record escalation. Its most important qualification is that after an initial autonomous period Cockroach Labs required human review for every merge, and it still described verification of the unreviewed initial Db2 work as incomplete. Keep human approval as the default for significant changes; measure review returns, escalations, rework and acceptance rather than advertising code volume or elapsed generation time. ^[raw/articles/cockroach-molt-sinai-2026-10-09.md]
+
+## Execution containment is a separate, backend-specific gate
+
+[[entities/tools/microsoft-execution-containers|Microsoft Execution Containers]] v1.0 makes an executable policy boundary available to agent/workload hosts: a workload can be given explicit filesystem, network, process and UI authority outside the harness. Treat policy learning/permissive modes only as evidence-gathering; accept a policy only after exercising denied and allowed paths under enforcement. MXC's process, session, WSL and experimental MicroVM backends have different guarantees, so a unified SDK API is not an isolation equivalence proof. ^[raw/articles/microsoft-mxc-v1-2026-10-07.md]
+
+Related: [[comparisons/model-routing-hermes-opencode-pi]], [[entities/tools/hermes-agent]], [[entities/tools/orca]] and [[entities/tools/microsoft-execution-containers]].

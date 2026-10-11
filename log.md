@@ -446,3 +446,9 @@ Files created:
 - Added `raw/papers/chen-stratton-ai-software-production-bottlenecks-2026-10-10.md`, a bounded immutable record of Chen and Stratton's observational study across 718 firms.
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the explicit measurement boundary: code-generation throughput is not delivery throughput; track review capacity, acceptance, rework and time-to-accepted-change.
 - Updated `index.md` date; no indexed page was added or renamed.
+
+## [2026-10-11] ingest | Microsoft Execution Containers v1.0 and MOLT Sinai multi-agent workflow evidence
+- Added immutable primary-source captures: `raw/articles/microsoft-mxc-v1-2026-10-07.md` and `raw/articles/cockroach-molt-sinai-2026-10-09.md`.
+- Added `entities/tools/microsoft-execution-containers.md` with the stable Rust/.NET/Node SDK boundary, backend-specific containment caveat, and controlled-pilot guidance.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with Cockroach Labs' first-party evidence for staged roles, planning/review/escalation and human merge approval, plus MXC's enforcement-versus-policy-discovery boundary.
+- Updated `index.md` date and page count.
