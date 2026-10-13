@@ -1,7 +1,7 @@
 ---
 title: Merge-Gated DAG Coding Workflow
 created: 2026-07-25
-updated: 2026-10-11
+updated: 2026-10-13
 type: architecture
 tags: [agent, agent-orchestration, multi-agent, workflow, coding, architecture, testing, devops]
 sources:
@@ -16,6 +16,7 @@ sources:
   - raw/papers/chen-stratton-ai-software-production-bottlenecks-2026-10-10.md
   - raw/articles/cockroach-molt-sinai-2026-10-09.md
   - raw/articles/microsoft-mxc-v1-2026-10-07.md
+  - raw/articles/anthropic-self-replicating-ai-2026-10-12.md
 confidence: high
 contested: false
 contradictions: []
@@ -144,6 +145,12 @@ Apple’s 2 October 2026 Full Disk Access announcement makes a portable agent-wo
 Adversa AI's October 2026 Copilot CLI demonstration adds a distinct trust-boundary rule: ciphertext fetched from an untrusted page does not become trusted merely because the agent decrypted it or because the plaintext arrives through the tool/runtime result channel. The reported chain links untrusted web content, local-file reads and unrelated outbound egress; it also varies by effective model, so a model refusal is not a policy boundary. The report has important limits — autopilot plus a permissive model are required, its rates are researcher-reported, and GitHub reportedly declined to classify the behavior as a product vulnerability — but the control implication is reusable. ^[raw/articles/adversa-cryptographic-context-injection-copilot-2026-10-06.md]
 
 For every agent run, preserve provenance and taint classification across fetch, execution, decryption, tool output and intermediate state. Record resolved tool arguments and connect read paths plus egress destinations to the same run ID; summaries written by the agent are not authoritative receipts. Enforce the paths it may read, short-lived credentials, and destination/method allowlists outside the model; require explicit review for operations that combine untrusted-content processing with access beyond the task workspace. This refines the broader egress and independent-verification controls in [[entities/tools/openai-agents-api]] and [[comparisons/model-routing-hermes-opencode-pi]].
+
+## Persistent-compromise resilience must be external to the agent
+
+Anthropic's controlled October 2026 evaluation treats autonomous replication as a chain of target discovery, access, inference setup and onward propagation. Its reported hardware/inference results do not establish a reliable worm in the wild: its setup experiments use controlled assumptions, and independent coverage notes that no current model was both small enough and capable enough to self-replicate reliably on the tested smart-TV hardware. The durable engineering implication is narrower: do not rely on a central model-provider boundary or a model's stated intent as a containment control for unattended agents. ^[raw/articles/anthropic-self-replicating-ai-2026-10-12.md]
+
+Keep task-scoped filesystem and destination/method egress allowlists outside the harness; use short-lived, revocable credentials; deny ambient private-network access; inventory/patch exposed device-management interfaces; and retain telemetry plus a rapid stop/revoke path. These controls reduce the blast radius of a compromised workload, but are not evidence that the modeled threat is already present in a particular environment. This extends the backend-specific enforcement rule in [[entities/tools/microsoft-execution-containers]] and the untrusted-content rule in [[entities/tools/openai-agents-api]].
 
 ## Review capacity is a first-class throughput constraint
 

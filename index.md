@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-10-11 | Total pages: 50
+> Last updated: 2026-10-13 | Total pages: 50
 
 ## Concepts
 

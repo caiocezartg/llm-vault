@@ -452,3 +452,8 @@ Files created:
 - Added `entities/tools/microsoft-execution-containers.md` with the stable Rust/.NET/Node SDK boundary, backend-specific containment caveat, and controlled-pilot guidance.
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with Cockroach Labs' first-party evidence for staged roles, planning/review/escalation and human merge approval, plus MXC's enforcement-versus-policy-discovery boundary.
 - Updated `index.md` date and page count.
+
+## [2026-10-13] update | Persistent-compromise resilience for unattended agents
+- Added `raw/articles/anthropic-self-replicating-ai-2026-10-12.md`, a bounded immutable capture of Anthropic's controlled replication/inference-setup evaluation with independent coverage and SHA-256 body checksum.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the durable control boundary: treat unattended agent execution as a persistent-compromise problem; retain external task-scoped permissions, explicit egress controls, short-lived revocable credentials, device-interface hygiene, and rapid containment rather than relying on model behavior or a centralized service boundary.
+- Updated `index.md` date; no indexed page was created or renamed.
