@@ -456,4 +456,9 @@ Files created:
 ## [2026-10-13] update | Persistent-compromise resilience for unattended agents
 - Added `raw/articles/anthropic-self-replicating-ai-2026-10-12.md`, a bounded immutable capture of Anthropic's controlled replication/inference-setup evaluation with independent coverage and SHA-256 body checksum.
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the durable control boundary: treat unattended agent execution as a persistent-compromise problem; retain external task-scoped permissions, explicit egress controls, short-lived revocable credentials, device-interface hygiene, and rapid containment rather than relying on model behavior or a centralized service boundary.
-- Updated `index.md` date; no indexed page was created or renamed.
+
+## [2026-10-14] update | Gemini 4 Argon GA and GhostAction workflow-injection control boundary
+- Added immutable bounded source record `raw/articles/gitguardian-ghostaction-campaign-2026-10-13.md` with SHA-256 body checksum, preserving GitGuardian's updated investigation and Socket's independent technical analysis.
+- Updated `entities/models/gemini-4-argon.md`: Argon moved from restricted early access to a testable GA/API and Copilot route; vendor benchmark claims remain distinct from a controlled trial.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md`: treat CI workflow-definition changes as privileged integration code; protected branches, scoped credentials/egress, reviewable workflow diffs and incident recovery remain required after a maintainer compromise.
+- Updated `index.md` date; no indexed page was added or renamed.

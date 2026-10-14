@@ -1,7 +1,7 @@
 ---
 title: Merge-Gated DAG Coding Workflow
 created: 2026-07-25
-updated: 2026-10-13
+updated: 2026-10-14
 type: architecture
 tags: [agent, agent-orchestration, multi-agent, workflow, coding, architecture, testing, devops]
 sources:
@@ -17,6 +17,7 @@ sources:
   - raw/articles/cockroach-molt-sinai-2026-10-09.md
   - raw/articles/microsoft-mxc-v1-2026-10-07.md
   - raw/articles/anthropic-self-replicating-ai-2026-10-12.md
+  - raw/articles/gitguardian-ghostaction-campaign-2026-10-13.md
 confidence: high
 contested: false
 contradictions: []
@@ -175,6 +176,12 @@ Start with a control-plane-first pilot because concurrent autonomous work is alr
 Cockroach Labs' first-party five-month report provides a useful operational counterweight to throughput-oriented agent demonstrations. Its stated “teaching hospital” workflow combines issue decomposition, reviewed plans, separate implementer and reviewer roles, explicit discharge conditions, periodic recovery/process roles, and human escalation. For a Db2 migration feature, the company reports 32 decomposition/follow-up issues, 27 merged PRs, 55 review returns and nine escalations; these are implementation-specific self-reported figures, not a portable benchmark. ^[raw/articles/cockroach-molt-sinai-2026-10-09.md]
 
 The transferable result is the control pattern, not the hospital vocabulary or reported speed: require planning before implementation, separate implementation from review, expose blocked/stalled states, make merge conditions executable, and record escalation. Its most important qualification is that after an initial autonomous period Cockroach Labs required human review for every merge, and it still described verification of the unreviewed initial Db2 work as incomplete. Keep human approval as the default for significant changes; measure review returns, escalations, rework and acceptance rather than advertising code volume or elapsed generation time. ^[raw/articles/cockroach-molt-sinai-2026-10-09.md]
+
+## Workflow definitions are privileged integration code
+
+The October 2026 GhostAction escalation demonstrates a separate CI control boundary: when a compromised maintainer can push directly to a default branch, the attacker can add a plausible `.github/workflows` file that consumes that repository's Actions secrets and scans the working tree/history for committed credentials. GitGuardian's updated figures report targeting at scale, while Socket independently documented the workflow-injection mechanism and successful runs in specific repositories; neither source establishes successful exfiltration from every targeted repository. ^[raw/articles/gitguardian-ghostaction-campaign-2026-10-13.md]
+
+Treat workflow-definition changes as privileged code rather than routine repository text. Disable direct default-branch pushes for sensitive repositories; protect `.github/workflows/**` with required review and status checks; give each CI job the minimum credentials and egress it requires; and retain auditable workflow diffs, run history, secret rotation and incident-recovery procedures. Secret scanning, push protection and platform-side blocking are valuable compensating controls, but do not replace protected integration, least privilege, provenance review or independent acceptance. This complements [[concepts/github-actions-cache-capability-modes]] and the SHA-bound gates above.
 
 ## Execution containment is a separate, backend-specific gate
 
