@@ -462,3 +462,8 @@ Files created:
 - Updated `entities/models/gemini-4-argon.md`: Argon moved from restricted early access to a testable GA/API and Copilot route; vendor benchmark claims remain distinct from a controlled trial.
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md`: treat CI workflow-definition changes as privileged integration code; protected branches, scoped credentials/egress, reviewable workflow diffs and incident recovery remain required after a maintainer compromise.
 - Updated `index.md` date; no indexed page was added or renamed.
+
+## [2026-10-15] update | Agent-scale source-control capacity boundary
+- Added `raw/articles/anthropic-scion-source-control-2026-10-13.md`, preserving a bounded primary-source record with immutable-body SHA-256.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the bounded lesson from Anthropic's Scion case study: agent-scale throughput can move the limiting resource from generation to checkout/cache, CI, source-control queries, merge coordination and review; retain Git-compatible incremental controls, acceptance metrics and independent gates before considering a wholesale SCM change.
+- Updated `index.md` date; no indexed page was added or renamed.

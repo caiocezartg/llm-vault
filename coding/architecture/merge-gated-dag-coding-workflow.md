@@ -1,7 +1,7 @@
 ---
 title: Merge-Gated DAG Coding Workflow
 created: 2026-07-25
-updated: 2026-10-14
+updated: 2026-10-15
 type: architecture
 tags: [agent, agent-orchestration, multi-agent, workflow, coding, architecture, testing, devops]
 sources:
@@ -18,6 +18,7 @@ sources:
   - raw/articles/microsoft-mxc-v1-2026-10-07.md
   - raw/articles/anthropic-self-replicating-ai-2026-10-12.md
   - raw/articles/gitguardian-ghostaction-campaign-2026-10-13.md
+  - raw/articles/anthropic-scion-source-control-2026-10-13.md
 confidence: high
 contested: false
 contradictions: []
@@ -158,6 +159,12 @@ Keep task-scoped filesystem and destination/method egress allowlists outside the
 Chen and Stratton's observational study of 718 firms reports that coding-agent adoption correlates with substantially more code, commits and pull requests, but not a statistically significant change in firm-level issue or epic resolution in its January 2021–March 2026 sample. Its proposed mechanism is code review: PR-to-merge time rises, more PRs require revision, comments increase, and firms assign a larger share of workers to review. The evidence is not an experiment and cannot determine the outcome for a particular model, repository or team; it is a reason to instrument the production pipeline rather than treat token volume or diff count as delivery. ^[raw/papers/chen-stratton-ai-software-production-bottlenecks-2026-10-10.md]
 
 Measure review queue depth and latency, revision/rework rate, executable-evidence coverage, reviewer intervention, acceptance rate and time-to-accepted-change alongside model cost and generation speed. Raise parallel-agent concurrency only when these downstream measures retain headroom. Use scoped tasks, SHA-bound gates, reproducible test evidence and independently reviewed diffs to reduce avoidable review load; do not replace review with an unaudited agent verdict.
+
+## Agent-scale source control is a capacity boundary, not a portability mandate
+
+Anthropic's October 2026 Scion case study reports a shift from roughly 2,500 to more than 30,000 daily merges, alongside about 25 million CI checkouts per day. Its internal answer is a server-first source-control service with bounded caches, sparse/virtualized checkout and API-based repository queries. Those facts apply to an unusually large, bespoke monorepo; the company explicitly says Git remains right for most repositories and that Scion is not generally deployable. ^[raw/articles/anthropic-scion-source-control-2026-10-13.md]
+
+The reusable control-plane implication is narrower: increasing worker concurrency can move the bottleneck from code generation into checkout/cache throughput, CI capacity, source-control query cost, merge/rebase coordination and human review. Instrument these queues and acceptance/rework outcomes before adding workers or replacing SCM. Prefer incremental Git-compatible measures—fresh SHA-bound checkouts, sparse/partial strategies where appropriate, explicit checkout/cache telemetry, merge queues, review budgets and server-side repository APIs—unless measured pressure justifies a more radical change. A source-control architecture cannot certify output quality; retain the independent review, executable gates and post-merge observation in this workflow. This refines [[coding/architecture/project-memory-and-multi-model-handoff-layers]] and [[comparisons/model-routing-hermes-opencode-pi]].
 
 ## Minimal practical rollout
 
