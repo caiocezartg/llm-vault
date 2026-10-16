@@ -1,7 +1,7 @@
 ---
 title: Merge-Gated DAG Coding Workflow
 created: 2026-07-25
-updated: 2026-10-15
+updated: 2026-10-16
 type: architecture
 tags: [agent, agent-orchestration, multi-agent, workflow, coding, architecture, testing, devops]
 sources:
@@ -19,6 +19,8 @@ sources:
   - raw/articles/anthropic-self-replicating-ai-2026-10-12.md
   - raw/articles/gitguardian-ghostaction-campaign-2026-10-13.md
   - raw/articles/anthropic-scion-source-control-2026-10-13.md
+  - raw/articles/github-ai-scan-ga-2026-10-15.md
+  - raw/articles/github-agentic-autofix-ga-2026-10-15.md
 confidence: high
 contested: false
 contradictions: []
@@ -189,6 +191,12 @@ The transferable result is the control pattern, not the hospital vocabulary or r
 The October 2026 GhostAction escalation demonstrates a separate CI control boundary: when a compromised maintainer can push directly to a default branch, the attacker can add a plausible `.github/workflows` file that consumes that repository's Actions secrets and scans the working tree/history for committed credentials. GitGuardian's updated figures report targeting at scale, while Socket independently documented the workflow-injection mechanism and successful runs in specific repositories; neither source establishes successful exfiltration from every targeted repository. ^[raw/articles/gitguardian-ghostaction-campaign-2026-10-13.md]
 
 Treat workflow-definition changes as privileged code rather than routine repository text. Disable direct default-branch pushes for sensitive repositories; protect `.github/workflows/**` with required review and status checks; give each CI job the minimum credentials and egress it requires; and retain auditable workflow diffs, run history, secret rotation and incident-recovery procedures. Secret scanning, push protection and platform-side blocking are valuable compensating controls, but do not replace protected integration, least privilege, provenance review or independent acceptance. This complements [[concepts/github-actions-cache-capability-modes]] and the SHA-bound gates above.
+
+## AI security findings and draft remediation are evidence, not merge authority
+
+GitHub’s October 2026 GA of AI Scan and Agentic Autofix makes an explicit two-stage security workflow available: AI Scan adds advisory PR findings for selected surfaces outside CodeQL’s ordinary coverage, while Agentic Autofix can investigate default-branch alerts, rerun the standard CodeQL suite, and open a draft PR. Neither result is a merge verdict. AI Scan does not block a ruleset-required merge and excludes fork/Dependabot PRs; Agentic Autofix is best effort and cannot confirm custom CodeQL queries, the `security-extended` suite, or third-party-tool alerts. ^[raw/articles/github-ai-scan-ga-2026-10-15.md] ^[raw/articles/github-agentic-autofix-ga-2026-10-15.md]
+
+Enable these capabilities through a bounded pilot: set a hard Code Security AI-credit budget before organization-wide rollout, choose a repository with known baseline coverage, record per-finding cost/precision/acceptance/rework, and keep repository-native tests, protected branches, SHA-bound review and human merge approval intact. A draft that closes one scanner alert does not certify an application, its dependency graph, or a wider security policy. This refines the independent-gate and privileged-workflow boundaries above and complements [[entities/tools/cloudflare-security-audit-skill]].
 
 ## Execution containment is a separate, backend-specific gate
 

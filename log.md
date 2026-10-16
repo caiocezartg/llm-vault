@@ -466,4 +466,9 @@ Files created:
 ## [2026-10-15] update | Agent-scale source-control capacity boundary
 - Added `raw/articles/anthropic-scion-source-control-2026-10-13.md`, preserving a bounded primary-source record with immutable-body SHA-256.
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with the bounded lesson from Anthropic's Scion case study: agent-scale throughput can move the limiting resource from generation to checkout/cache, CI, source-control queries, merge coordination and review; retain Git-compatible incremental controls, acceptance metrics and independent gates before considering a wholesale SCM change.
-- Updated `index.md` date; no indexed page was added or renamed.
+- Updated `index.md` date; no new indexed page was created or renamed.
+
+## [2026-10-16] update | GitHub Code Security AI Scan and Agentic Autofix GA boundary
+- Added immutable bounded primary-source records with SHA-256 body checksums: `raw/articles/github-ai-scan-ga-2026-10-15.md` and `raw/articles/github-agentic-autofix-ga-2026-10-15.md`.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md`: AI findings are advisory and agentic remediation is a draft-PR/evidence surface, not merge authority; retain hard budgets, native tests, protected branches, SHA-bound review and human approval.
+- Updated `index.md` date; no new indexed synthesis page was created.
