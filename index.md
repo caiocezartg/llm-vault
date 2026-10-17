@@ -1,7 +1,7 @@
 # Wiki Index
 
 > Global Hermes LLM Wiki / Obsidian vault. Read this first to find relevant pages for any query.
-> Last updated: 2026-10-16 | Total pages: 50
+> Last updated: 2026-10-17 | Total pages: 51
 
 ## Concepts
 
@@ -33,6 +33,7 @@
 - [[entities/models/kolibri]] — Aleph Alpha’s Apache-2.0 78B/3.46B-active bilingual MoE; hardware envelope, vendor-evidence boundary and controlled self-hosted trial protocol.
 - [[entities/models/lfm25-26b]] — Open-weight 2.69B model for bounded local tool loops; its own model card excludes agentic coding and requires controlled evaluation.
 - [[entities/models/muse-glimmer]] — Meta's Apache-2.0 30B local-agent model; vendor performance claims remain bounded by controlled evaluation.
+- [[entities/models/muse-spark-open]] — Meta's 816B/42B-active open-weight coding/agent model; license, hardware envelope and controlled-evaluation boundary included.
 - [[entities/models/qwen3-8-max]] — Qwen’s 2.4T/95B-active flagship: API trial candidate with promised open weights; retain vendor-evidence and controlled-evaluation boundaries.
 - [[entities/models/tencent-hy4]] — Tencent’s Apache-2.0 770B-total/49B-active MoE preview; a controlled long-context coding/agent trial candidate, not a default route.
 

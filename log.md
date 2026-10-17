@@ -471,4 +471,10 @@ Files created:
 ## [2026-10-16] update | GitHub Code Security AI Scan and Agentic Autofix GA boundary
 - Added immutable bounded primary-source records with SHA-256 body checksums: `raw/articles/github-ai-scan-ga-2026-10-15.md` and `raw/articles/github-agentic-autofix-ga-2026-10-15.md`.
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md`: AI findings are advisory and agentic remediation is a draft-PR/evidence surface, not merge authority; retain hard budgets, native tests, protected branches, SHA-bound review and human approval.
-- Updated `index.md` date; no new indexed synthesis page was created.
+- Updated `index.md` date; no new indexed synthesis page was created or renamed.
+
+## [2026-10-17] ingest | Muse Spark Open and agent-scale review convergence
+- Added immutable bounded primary-source captures: `raw/articles/meta-muse-spark-open-2026-10-15.md` and `raw/articles/anthropic-claude-code-review-practice-2026-10-15.md`.
+- Added `entities/models/muse-spark-open.md` with its open-weight/license, hardware-envelope and controlled-trial boundaries, cross-linked to existing model-routing knowledge.
+- Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with review-convergence controls: risk-based human escalation, SHA-bound approvals, round caps/diff-only re-review, and incident/revert-driven evaluator regression.
+- Updated `index.md` date and page count.

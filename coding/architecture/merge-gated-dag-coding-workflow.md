@@ -1,7 +1,7 @@
 ---
 title: Merge-Gated DAG Coding Workflow
 created: 2026-07-25
-updated: 2026-10-16
+updated: 2026-10-17
 type: architecture
 tags: [agent, agent-orchestration, multi-agent, workflow, coding, architecture, testing, devops]
 sources:
@@ -21,6 +21,7 @@ sources:
   - raw/articles/anthropic-scion-source-control-2026-10-13.md
   - raw/articles/github-ai-scan-ga-2026-10-15.md
   - raw/articles/github-agentic-autofix-ga-2026-10-15.md
+  - raw/articles/anthropic-claude-code-review-practice-2026-10-15.md
 confidence: high
 contested: false
 contradictions: []
@@ -161,6 +162,12 @@ Keep task-scoped filesystem and destination/method egress allowlists outside the
 Chen and Stratton's observational study of 718 firms reports that coding-agent adoption correlates with substantially more code, commits and pull requests, but not a statistically significant change in firm-level issue or epic resolution in its January 2021–March 2026 sample. Its proposed mechanism is code review: PR-to-merge time rises, more PRs require revision, comments increase, and firms assign a larger share of workers to review. The evidence is not an experiment and cannot determine the outcome for a particular model, repository or team; it is a reason to instrument the production pipeline rather than treat token volume or diff count as delivery. ^[raw/papers/chen-stratton-ai-software-production-bottlenecks-2026-10-10.md]
 
 Measure review queue depth and latency, revision/rework rate, executable-evidence coverage, reviewer intervention, acceptance rate and time-to-accepted-change alongside model cost and generation speed. Raise parallel-agent concurrency only when these downstream measures retain headroom. Use scoped tasks, SHA-bound gates, reproducible test evidence and independently reviewed diffs to reduce avoidable review load; do not replace review with an unaudited agent verdict.
+
+## Review automation must converge and remain risk-bound
+
+Anthropic's Claude Code team reports an internal production pattern that adds implementation detail to the review-capacity constraint: executable pre-PR evidence and a fresh-context agent review; required CI; parallel agent findings verified by separate agents; a blocking security pass; risk-based human approval; merge-queue revalidation; staged release; and fast rollback. It reports more than doubled merged PRs from June to September while the reverted share fell by more than 40%, but this is a first-party operational observation rather than an experiment or portable productivity rate. ^[raw/articles/anthropic-claude-code-review-practice-2026-10-15.md]
+
+The reusable boundary is not “agents review agents, therefore no review.” Use reverts and incidents as guardrails alongside human approvals/comments/wait time; classify risk from the change rather than author identity; retain mandatory human approval for privileged paths (notably CI/release/auth/billing); and bind approval to the exact commit. Agent review rounds need a convergence budget: cap rounds, re-review only new diffs after early passes, prevent duplicate findings, and promote incident/revert cases into a regression evaluation set before changing reviewer prompts, tools or models. Do not allow an agent approval to satisfy a required human approval; introduce any low-risk automatic route through a measured, reversible pilot first. This strengthens the SHA-bound review and privileged-workflow rules above.
 
 ## Agent-scale source control is a capacity boundary, not a portability mandate
 
