@@ -478,3 +478,8 @@ Files created:
 - Added `entities/models/muse-spark-open.md` with its open-weight/license, hardware-envelope and controlled-trial boundaries, cross-linked to existing model-routing knowledge.
 - Updated `coding/architecture/merge-gated-dag-coding-workflow.md` with review-convergence controls: risk-based human escalation, SHA-bound approvals, round caps/diff-only re-review, and incident/revert-driven evaluator regression.
 - Updated `index.md` date and page count.
+
+## [2026-10-18] update | DeepSeek V4.1 Flash 1017
+- Added `raw/articles/deepseek-v4-1-flash-1017-2026-10-18.md`, preserving the official checkpoint/API/tool-release record with an immutable-body SHA-256.
+- Updated `entities/models/deepseek-v4-1-flash.md` with the checkpoint boundary, first-party benchmark caveat, local/prompt-encoding requirements, search-tool billing transition, and fixed-harness trial guidance.
+- Updated `index.md` date; no new entity page was created.
